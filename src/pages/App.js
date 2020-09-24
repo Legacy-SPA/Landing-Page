@@ -2,6 +2,7 @@ import React from "react"
 import { Router } from "@reach/router"
 
 import MuiLayout from "../layouts/MuiLayout"
+import Dashboard from "../routes/Dashboard"
 
 const App = () => {
   return (
