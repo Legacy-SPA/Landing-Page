@@ -9,48 +9,61 @@ import "./styles.css"
 const theme = createMuiTheme({
   palette: {
     primary: {
-      main: "#fd691d",
-      contrastText: "#fff",
+      main: "#0F1124",
+      contrastText: "#ffffff",
     },
     secondary: {
-      main: "#ffffff",
-      contrastText: "#fd691d",
+      main: "#704EF6",
+      contrastText: "#ffffff",
     },
     text: {
-      primary: "#2e3a59",
+      primary: "#181B32",
+    },
+    background: {
+      default: "#ffffff",
+      paper: "#0F1124"
     },
   },
 
   typography: {
-    fontFamily: "'Open Sans', 'Lato', sans-serif",
+    fontFamily: "'Spartan', sans-serif",
     fontStyle: "normal",
     fontDisplay: "swap",
     h1: {
-      fontSize: "2.5rem",
-      fontWeight: 900,
+      fontSize: "32px",
+      fontWeight: 100,
     },
     h2: {
-      fontSize: "2.25rem",
-      fontWeight: 900,
-      lineHeight: 1.11,
+      fontSize: "21px",
+      fontWeight: 100,
       objectFit: "contain",
     },
     h6: {
       fontSize: "0.9375rem",
-      fontWeight: 400,
+      fontWeight: 100,
       lineHeight: 2,
       objectFit: "contain",
     },
     subtitle1: {
-      fontSize: "1.125rem",
+      fontSize: "16px",
+      fontWeight: 400,
+      lineHeight: 1.67,
+    },
+    subtitle2: {
+      fontSize: "12px",
       fontWeight: 400,
       lineHeight: 1.67,
     },
     body1: {
-      fontSize: "0.9375rem",
+      fontSize: "14px",
       fontWeight: 300,
       lineHeight: 2,
     },
+    button: {
+      fontSize: "16px",
+      fontWeight: 600,
+      textTransform: 'none',
+    }
   },
   shadows: ["none", "0 7px 20px 0 #32325d26"],
 })
