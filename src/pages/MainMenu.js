@@ -13,13 +13,13 @@ const useStyles = makeStyles((theme) => {
     backgroundColor: theme.palette.background.paper,
   },
   text: {
-    width: '50%',
+    width: '40%',
     padding: '100px',
     paddingLeft: '10%',
     color: theme.palette.primary.contrastText,
   },
   image: {
-    width: '50%',
+    width: '60%',
     padding: '0px',
     paddingRight: '10px',
     color: theme.palette.primary.contrastText
