@@ -3,6 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import svg from '../images/Logo.svg'
 import {AppBar, Toolbar, Button, IconButton} from "@material-ui/core"
 import MainMenu from './MainMenu'
+import Services from './Services'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -36,6 +37,7 @@ const Landing = () => {
         </Toolbar>
       </AppBar>
       <MainMenu/>
+      <Services/>
     </div>
   )
 }
