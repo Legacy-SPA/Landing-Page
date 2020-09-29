@@ -1,7 +1,7 @@
 import React from 'react'
 import {Typography, Button} from '@material-ui/core'
 import { makeStyles } from "@material-ui/core/styles"
-import Group from '../images/Group.svg'
+import Main from '../images/Main.svg'
 
 
 const useStyles = makeStyles((theme) => {
@@ -13,19 +13,17 @@ const useStyles = makeStyles((theme) => {
     backgroundColor: theme.palette.background.paper,
   },
   text: {
-    width: '50%',
+    width: '40%',
     padding: '100px',
-    paddingLeft: '150px',
+    paddingLeft: '10%',
     color: theme.palette.primary.contrastText,
   },
   image: {
-    width: '50%',
-    padding: '100px',
+    width: '60%',
+    padding: '0px',
+    paddingRight: '10px',
     color: theme.palette.primary.contrastText
   },
-  button: {
-
-  }
   }
   )}
 )
@@ -43,7 +41,7 @@ const MainMenu = () => {
         </div>
       </div>
       <div className={classes.image}>
-        <Typography variant='h1'><b>Imagen</b></Typography>
+        <img src={Main} />
       </div>
     </div>
   )
