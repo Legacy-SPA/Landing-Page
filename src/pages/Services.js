@@ -46,52 +46,52 @@ const Services = () => {
       <Typography className={classes.text} variant='h6'>Brindamos servicios informáticos integrales, entre los cuales destacan los siguientes: </Typography>
     </div>
      <Grid container spacing={1} className={classes.contentServices} >
-       <Grid container xs={12} className={classes.rowServices} >
-           <Grid xs={4}>
+       <Grid container xs={12} md={12} className={classes.rowServices} >
+           <Grid xs={12} md={4}>
              <img src={cms}/>
              <Typography className={classes.serviceDesc} variant='h2'><b>Desarrollo de Software a medida</b></Typography>
              <Typography className={classes.serviceDesc} variant='h6'>consectetur adipiscing elit. Nulla egestas augue vitae lacinia pretium.</Typography>
            </Grid>
-           <Grid xs={4}>
+           <Grid xs={12} md={4}>
              <img src={appDevelopment}/>
              <Typography className={classes.serviceDesc} variant='h2'><b>Desarrollo de aplicaciones móviles</b></Typography>
              <Typography className={classes.serviceDesc} variant='h6'>consectetur adipiscing elit. Nulla egestas augue vitae lacinia pretium.</Typography>
            </Grid>
-           <Grid xs={4}>
+           <Grid xs={12} md={4}>
              <img src={layers}/>
              <Typography className={classes.serviceDesc} variant='h2'><b>Integración de plataformas</b></Typography>
              <Typography className={classes.serviceDesc} variant='h6'>consectetur adipiscing elit. Nulla egestas augue vitae lacinia pretium.</Typography>
            </Grid>
        </Grid>
-       <Grid container xs={12} className={classes.rowServices} >
-         <Grid xs={4}>
+       <Grid container xs={12} md={12} className={classes.rowServices} >
+         <Grid xs={12} md={4}>
            <img src={project}/>
            <Typography className={classes.serviceDesc} variant='h2'><b>Consultoría y asesoría</b></Typography>
            <Typography className={classes.serviceDesc} variant='h6'>consectetur adipiscing elit. Nulla egestas augue vitae lacinia pretium.</Typography>
          </Grid>
-         <Grid xs={4}>
+         <Grid xs={12} md={4}>
            <img src={cms}/>
            <Typography className={classes.serviceDesc} variant='h2'><b>Desarrollo de Software a medida</b></Typography>
            <Typography className={classes.serviceDesc} variant='h6'>consectetur adipiscing elit. Nulla egestas augue vitae lacinia pretium.</Typography>
          </Grid>
-         <Grid xs={4}>
+         <Grid xs={12} md={4}>
            <img src={appDevelopment}/>
            <Typography className={classes.serviceDesc} variant='h2'><b>Desarrollo de aplicaciones móviles</b></Typography>
            <Typography className={classes.serviceDesc} variant='h6'>consectetur adipiscing elit. Nulla egestas augue vitae lacinia pretium.</Typography>
          </Grid>
        </Grid>
-       <Grid container xs={12} className={classes.rowServices} >
-         <Grid xs={4}>
+       <Grid container xs={12} md={12} className={classes.rowServices} >
+         <Grid xs={12} md={4}>
            <img src={cms}/>
            <Typography className={classes.serviceDesc} variant='h2'><b>Desarrollo de Software a medida</b></Typography>
            <Typography className={classes.serviceDesc} variant='h6'>consectetur adipiscing elit. Nulla egestas augue vitae lacinia pretium.</Typography>
          </Grid>
-         <Grid xs={4}>
+         <Grid xs={12} md={4}>
            <img src={appDevelopment}/>
            <Typography className={classes.serviceDesc} variant='h2'><b>Desarrollo de aplicaciones móviles</b></Typography>
            <Typography className={classes.serviceDesc} variant='h6'>consectetur adipiscing elit. Nulla egestas augue vitae lacinia pretium.</Typography>
          </Grid>
-         <Grid xs={4}>
+         <Grid xs={12} md={4}>
            <img src={layers}/>
            <Typography className={classes.serviceDesc} variant='h2'><b>Integración de plataformas</b></Typography>
            <Typography className={classes.serviceDesc} variant='h6'>consectetur adipiscing elit. Nulla egestas augue vitae lacinia pretium.</Typography>
