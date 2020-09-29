@@ -2,7 +2,7 @@ import React from "react"
 
 const Dashboard = () => (
   <div>
-    <h1>This is a Hello</h1>
+    <h1>This is a Dashboard</h1>
   </div>
 )
 
