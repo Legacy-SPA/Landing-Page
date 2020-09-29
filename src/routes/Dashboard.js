@@ -1,8 +1,9 @@
 import React from "react"
+import MainMenu from '../pages/MainMenu'
 
 const Dashboard = () => (
   <div>
-    <h1>This is a Dashboard</h1>
+    <MainMenu/>
   </div>
 )
 
