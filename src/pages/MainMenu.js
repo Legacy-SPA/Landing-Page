@@ -16,6 +16,9 @@ const useStyles = makeStyles((theme) => {
     padding: '100px',
     paddingLeft: '10%',
     color: theme.palette.primary.contrastText,
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'space-between',
   },
   image: {
     padding: '0px',
