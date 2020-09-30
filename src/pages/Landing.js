@@ -4,6 +4,7 @@ import MainMenu from "./MainMenu"
 import Services from "./Services"
 import Footer from './Footer'
 import Methodology from "./Methodology"
+import Client from "./Client"
 
 const items = [
   'Servicios',
@@ -18,6 +19,7 @@ const Landing = () => {
       <MainMenu/>
       <Services/>
       <Methodology/>
+      <Client/>
       <Footer/>
     </div>
   )
