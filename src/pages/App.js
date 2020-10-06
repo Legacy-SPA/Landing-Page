@@ -8,7 +8,7 @@ const App = () => {
   return (
     <Router>
       <MuiLayout path="/">
-        <Landing path="/"/>
+        <Landing path="/" />
       </MuiLayout>
     </Router>
   )

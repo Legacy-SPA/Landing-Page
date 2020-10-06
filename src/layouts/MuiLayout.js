@@ -21,7 +21,7 @@ const theme = createMuiTheme({
     },
     background: {
       default: "#ffffff",
-      paper: "#0F1124"
+      paper: "#0F1124",
     },
   },
 
@@ -62,8 +62,8 @@ const theme = createMuiTheme({
     button: {
       fontSize: "16px",
       fontWeight: 600,
-      textTransform: 'none',
-    }
+      textTransform: "none",
+    },
   },
   shadows: ["none", "0 7px 20px 0 #32325d26"],
 })
