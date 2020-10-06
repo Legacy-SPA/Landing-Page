@@ -1,9 +1,9 @@
 import React from "react"
 import { makeStyles } from "@material-ui/core/styles"
 import { Typography, Grid } from "@material-ui/core"
-import project from '../images/project.svg'
 import cms from '../images/cms.svg'
 import layers from '../images/layers.svg'
+import project from '../images/project.svg'
 import appDevelopment from '../images/appDevelopment.svg'
 
 const useStyles = makeStyles((theme) => ({
@@ -58,51 +58,51 @@ const Services = () => {
        <Grid container item xs={12} className={classes.contentServices} >
          <Grid container item xs={12} md={12} className={classes.rowServices} >
              <Grid xs={12} md={4}>
-               <img src={cms}/>
+               <img alt={'Software'} src={cms}/>
                <Typography className={classes.serviceDesc} variant='h2'><b>Desarrollo de Software a medida</b></Typography>
                <Typography className={classes.serviceDesc} variant='h6'>consectetur adipiscing elit. Nulla egestas augue vitae lacinia pretium.</Typography>
              </Grid>
              <Grid xs={12} md={4}>
-               <img src={appDevelopment}/>
+               <img alt={'Apps'} src={appDevelopment}/>
                <Typography className={classes.serviceDesc} variant='h2'><b>Desarrollo de aplicaciones móviles</b></Typography>
                <Typography className={classes.serviceDesc} variant='h6'>consectetur adipiscing elit. Nulla egestas augue vitae lacinia pretium.</Typography>
              </Grid>
              <Grid xs={12} md={4}>
-               <img src={layers}/>
+               <img alt={'Integración'} src={layers}/>
                <Typography className={classes.serviceDesc} variant='h2'><b>Integración de plataformas</b></Typography>
                <Typography className={classes.serviceDesc} variant='h6'>consectetur adipiscing elit. Nulla egestas augue vitae lacinia pretium.</Typography>
              </Grid>
          </Grid>
          <Grid container item xs={12} md={12} className={classes.rowServices} >
            <Grid xs={12} md={4}>
-             <img src={project}/>
+             <img src={project} alt={'Proyecto'}/>
              <Typography className={classes.serviceDesc} variant='h2'><b>Consultoría y asesoría</b></Typography>
              <Typography className={classes.serviceDesc} variant='h6'>consectetur adipiscing elit. Nulla egestas augue vitae lacinia pretium.</Typography>
            </Grid>
            <Grid xs={12} md={4}>
-             <img src={cms}/>
+             <img src={cms} alt={'Software'}/>
              <Typography className={classes.serviceDesc} variant='h2'><b>Desarrollo de Software a medida</b></Typography>
              <Typography className={classes.serviceDesc} variant='h6'>consectetur adipiscing elit. Nulla egestas augue vitae lacinia pretium.</Typography>
            </Grid>
            <Grid xs={12} md={4}>
-             <img src={appDevelopment}/>
+             <img src={appDevelopment} alt={'Apps'}/>
              <Typography className={classes.serviceDesc} variant='h2'><b>Desarrollo de aplicaciones móviles</b></Typography>
              <Typography className={classes.serviceDesc} variant='h6'>consectetur adipiscing elit. Nulla egestas augue vitae lacinia pretium.</Typography>
            </Grid>
          </Grid>
          <Grid container item xs={12} md={12} className={classes.rowServices} >
            <Grid xs={12} md={4}>
-             <img src={cms}/>
+             <img src={cms} alt={'Software'}/>
              <Typography className={classes.serviceDesc} variant='h2'><b>Desarrollo de Software a medida</b></Typography>
              <Typography className={classes.serviceDesc} variant='h6'>consectetur adipiscing elit. Nulla egestas augue vitae lacinia pretium.</Typography>
            </Grid>
            <Grid xs={12} md={4}>
-             <img src={appDevelopment}/>
+             <img src={appDevelopment} alt={'Apps'}/>
              <Typography className={classes.serviceDesc} variant='h2'><b>Desarrollo de aplicaciones móviles</b></Typography>
              <Typography className={classes.serviceDesc} variant='h6'>consectetur adipiscing elit. Nulla egestas augue vitae lacinia pretium.</Typography>
            </Grid>
            <Grid xs={12} md={4}>
-             <img src={layers}/>
+            <img src={layers} alt={'Integración'}/>
              <Typography className={classes.serviceDesc} variant='h2'><b>Integración de plataformas</b></Typography>
              <Typography className={classes.serviceDesc} variant='h6'>consectetur adipiscing elit. Nulla egestas augue vitae lacinia pretium.</Typography>
            </Grid>

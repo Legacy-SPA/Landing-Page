@@ -1,7 +1,6 @@
 import React from "react"
-import { Button, Grid, Typography } from "@material-ui/core"
+import { Grid, Typography } from "@material-ui/core"
 import Logo from "../images/cms.svg"
-import Box from "@material-ui/core/Box"
 import { makeStyles } from "@material-ui/core/styles"
 const useStyles = makeStyles((theme) => {
   return ({
@@ -26,31 +25,28 @@ const Client = () => {
           Bridamos servicios informáticos integrales, entre los cuales destacan los siguientes:Bridamos servicios informáticos integrales, entre los cuales destacan los siguientes:Bridamos servicios informáticos integrales, entre los cuales destacan los siguientes:
         </small>
       </Typography>
-      <div>
-        <Button color='secondary'>Botón</Button>
-      </div>
     </Grid>
     <Grid container xs={12} md={8} className={classes.logos} >
       <Grid container xs={12} md={12} >
         <Grid xs={12} md={4}>
-          <img src={Logo} size={30}/>
+          <img alt={''} src={Logo} size={30}/>
         </Grid>
         <Grid xs={12} md={4}>
-          <img src={Logo}/>
+          <img alt={''} src={Logo}/>
         </Grid>
         <Grid xs={12} md={4}>
-          <img src={Logo}/>
+          <img alt={''} src={Logo}/>
         </Grid>
       </Grid>
       <Grid container xs={12} md={12} >
         <Grid xs={12} md={4}>
-          <img src={Logo}/>
+          <img alt={''} src={Logo}/>
         </Grid>
         <Grid xs={12} md={4}>
-          <img src={Logo}/>
+          <img alt={''} src={Logo}/>
         </Grid>
         <Grid xs={12} md={4}>
-          <img src={Logo}/>
+          <img alt={''} src={Logo}/>
         </Grid>
       </Grid>
     </Grid>
