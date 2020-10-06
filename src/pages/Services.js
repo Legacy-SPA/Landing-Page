@@ -1,17 +1,25 @@
 import React from "react"
 import { makeStyles } from "@material-ui/core/styles"
 import { Typography, Grid } from "@material-ui/core"
-import project from '../images/project.svg'
 import cms from '../images/cms.svg'
 import layers from '../images/layers.svg'
 import appDevelopment from '../images/appDevelopment.svg'
+import Box from "@material-ui/core/Box"
 
 const useStyles = makeStyles((theme) => ({
-    title: {
-      width: '30%',
-      paddingLeft: '10%',
-      paddingTop: '50px',
-      paddingBottom: '25px',
+    main: {
+      width: '100%',
+    },
+    titleBox: {
+      display: 'flex',
+      alignItems: 'center',
+      padding: '50px 10% 25px 10%',
+      [theme.breakpoints.up('md')]: {
+        padding: '50px 0 25px 10%',
+      },
+      [theme.breakpoints.up('lg')]: {
+        padding: '50px 5% 25px 5%',
+      },
     },
     text: {
       color: theme.palette.primary.main,
@@ -19,10 +27,6 @@ const useStyles = makeStyles((theme) => ({
     serviceDesc: {
       color: theme.palette.primary.main,
       paddingRight: '100px'
-    },
-    contentServices: {
-      width: '100%',
-      paddingLeft: '10%',
     },
     rowServices: {
       width: '100%',
@@ -40,65 +44,50 @@ const useStyles = makeStyles((theme) => ({
 const Services = () => {
   const classes = useStyles()
   return(
-    <div>
-    <div className={classes.title}>
-      <Typography className={classes.text} variant='h1'><b>Nuestros Servicios</b></Typography>
-      <Typography className={classes.text} variant='h6'>Brindamos servicios informáticos integrales, entre los cuales destacan los siguientes: </Typography>
-    </div>
-     <Grid container spacing={1} className={classes.contentServices} >
+    <Box className={classes.main}>
+      <Grid xs={12} className={classes.titleBox}>
+        <Box>
+          <Typography className={classes.text} variant='h1'><b>Nuestros Servicios</b></Typography>
+          <Typography className={classes.text} variant='h6'>Brindamos servicios informáticos integrales, entre los cuales destacan los siguientes: </Typography>
+        </Box>
+      </Grid>
+      <Grid xs={12} >
        <Grid container xs={12} md={12} className={classes.rowServices} >
            <Grid xs={12} md={4}>
-             <img src={cms}/>
+             <img src={cms} alt={'Software'}/>
              <Typography className={classes.serviceDesc} variant='h2'><b>Desarrollo de Software a medida</b></Typography>
              <Typography className={classes.serviceDesc} variant='h6'>consectetur adipiscing elit. Nulla egestas augue vitae lacinia pretium.</Typography>
            </Grid>
            <Grid xs={12} md={4}>
-             <img src={appDevelopment}/>
+             <img src={appDevelopment} alt={'Apps'}/>
              <Typography className={classes.serviceDesc} variant='h2'><b>Desarrollo de aplicaciones móviles</b></Typography>
              <Typography className={classes.serviceDesc} variant='h6'>consectetur adipiscing elit. Nulla egestas augue vitae lacinia pretium.</Typography>
            </Grid>
            <Grid xs={12} md={4}>
-             <img src={layers}/>
+            <img src={layers} alt={'Integración'}/>
              <Typography className={classes.serviceDesc} variant='h2'><b>Integración de plataformas</b></Typography>
              <Typography className={classes.serviceDesc} variant='h6'>consectetur adipiscing elit. Nulla egestas augue vitae lacinia pretium.</Typography>
            </Grid>
        </Grid>
        <Grid container xs={12} md={12} className={classes.rowServices} >
          <Grid xs={12} md={4}>
-           <img src={project}/>
+           <img src={cms} alt={'Software'}/>
            <Typography className={classes.serviceDesc} variant='h2'><b>Consultoría y asesoría</b></Typography>
            <Typography className={classes.serviceDesc} variant='h6'>consectetur adipiscing elit. Nulla egestas augue vitae lacinia pretium.</Typography>
          </Grid>
          <Grid xs={12} md={4}>
-           <img src={cms}/>
+           <img src={appDevelopment} alt={'Apps'}/>
            <Typography className={classes.serviceDesc} variant='h2'><b>Desarrollo de Software a medida</b></Typography>
            <Typography className={classes.serviceDesc} variant='h6'>consectetur adipiscing elit. Nulla egestas augue vitae lacinia pretium.</Typography>
          </Grid>
          <Grid xs={12} md={4}>
-           <img src={appDevelopment}/>
+           <img src={layers} alt={'Integración'}/>
            <Typography className={classes.serviceDesc} variant='h2'><b>Desarrollo de aplicaciones móviles</b></Typography>
            <Typography className={classes.serviceDesc} variant='h6'>consectetur adipiscing elit. Nulla egestas augue vitae lacinia pretium.</Typography>
          </Grid>
        </Grid>
-       <Grid container xs={12} md={12} className={classes.rowServices} >
-         <Grid xs={12} md={4}>
-           <img src={cms}/>
-           <Typography className={classes.serviceDesc} variant='h2'><b>Desarrollo de Software a medida</b></Typography>
-           <Typography className={classes.serviceDesc} variant='h6'>consectetur adipiscing elit. Nulla egestas augue vitae lacinia pretium.</Typography>
-         </Grid>
-         <Grid xs={12} md={4}>
-           <img src={appDevelopment}/>
-           <Typography className={classes.serviceDesc} variant='h2'><b>Desarrollo de aplicaciones móviles</b></Typography>
-           <Typography className={classes.serviceDesc} variant='h6'>consectetur adipiscing elit. Nulla egestas augue vitae lacinia pretium.</Typography>
-         </Grid>
-         <Grid xs={12} md={4}>
-           <img src={layers}/>
-           <Typography className={classes.serviceDesc} variant='h2'><b>Integración de plataformas</b></Typography>
-           <Typography className={classes.serviceDesc} variant='h6'>consectetur adipiscing elit. Nulla egestas augue vitae lacinia pretium.</Typography>
-         </Grid>
-       </Grid>
-     </Grid>
-    </div>
+      </Grid>
+    </Box>
   )
 }
 
