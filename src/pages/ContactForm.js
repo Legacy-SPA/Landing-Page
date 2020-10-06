@@ -52,24 +52,24 @@ const ContactForm = () => {
         <b>Formulario de Contacto</b>
       </Typography>
       <div className={classes.labelContent}>
-        <label className={classes.labelInput}>
+        <label className={classes.labelInput} htmlFor={'email'}>
           <Typography className={classes.label} variant="h6">
             Email
           </Typography>
-          <Input className={classes.Input} placeholder={"info@orionx.cl"} type="text" />
         </label>
-        <label className={classes.labelInput}>
+        <Input className={classes.Input} placeholder={"info@example.com"} type="text" />
+        <label className={classes.labelInput} htmlFor={'nombre'}>
           <Typography className={classes.label} variant="h6">
             Nombre
           </Typography>
-          <Input className={classes.Input} placeholder={"Password"} type="text" />
         </label>
-        <label className={classes.labelInput}>
+        <Input className={classes.Input} placeholder={"Tu nombre"} type="text" />
+        <label className={classes.labelInput} htmlFor={'empresa'}>
           <Typography className={classes.label} variant="h6">
             Empresa
           </Typography>
-          <Input className={classes.Input} type="text" />
         </label>
+        <Input className={classes.Input} type="text" id={'empresa'} />
         <label className={classes.checkInput}>
           <input type="checkbox" />
           <Typography variant="h6" className={classes.label}>

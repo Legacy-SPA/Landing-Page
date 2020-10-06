@@ -1,5 +1,5 @@
 import React from "react"
-import { Grid, Typography } from "@material-ui/core"
+import { Typography } from "@material-ui/core"
 import { makeStyles } from "@material-ui/core/styles"
 import Box from "@material-ui/core/Box"
 import Group from "../images/Group.svg"
