@@ -26,9 +26,6 @@ const Client = () => {
           Bridamos servicios informáticos integrales, entre los cuales destacan los siguientes:Bridamos servicios informáticos integrales, entre los cuales destacan los siguientes:Bridamos servicios informáticos integrales, entre los cuales destacan los siguientes:
         </small>
       </Typography>
-      <div>
-        <Button color='secondary'>Botón</Button>
-      </div>
     </Grid>
     <Grid container xs={12} md={8} className={classes.logos} >
       <Grid container xs={12} md={12} >

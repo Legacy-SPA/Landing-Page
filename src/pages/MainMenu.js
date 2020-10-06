@@ -36,10 +36,6 @@ const MainMenu = () => {
       <Box className={classes.text}>
         <Typography variant='h1'><b>Desarrollo de Software a medida</b></Typography>
         <Typography variant='h2'>consectetur adipiscing elit. Nulla egestas augue vitae lacinia pretium</Typography>
-        <div>
-          <Button color='secondary'>Botón</Button>
-          <Button color='secondary'>Botón</Button>
-        </div>
       </Box>
       <Box className={classes.image} display={{xs: 'none', lg: 'block'}}>
         <img src={Main} />

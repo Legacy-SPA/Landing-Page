@@ -43,9 +43,6 @@ const Methodology = () => {
             consectetur adipiscing elit. Nulla egestas augue vitae lacinia pretium consectetur adipiscing elit. Nulla egestas augue vitae lacinia pretium consectetur adipiscing elit. Nulla egestas augue vitae lacinia pretium consectetur adipiscing elit. Nulla egestas augue vitae lacinia pretium consectetur adip.
           </small>
         </Typography>
-        <div>
-          <Button color='secondary'>Botón</Button>
-        </div>
       </Box>
     </div>
   )
