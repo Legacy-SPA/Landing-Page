@@ -48,17 +48,17 @@ const ContactForm = () => {
   const classes = useStyles()
   return (
     <Grid className={classes.container} item xs={12} sm={6}>
-      <form name="contact-form" netlify netlify-honeypot="bot-field" hidden>
+      <form name="contact" netlify netlify-honeypot="bot-field" hidden>
         <input type="email" name="correo" />
-        <input type="text" name="name" />
+        <input type="text" name="nombre" />
         <input type="text" name="empresa" />
         <textarea name="proyecto"></textarea>
       </form>
       <Typography className={classes.text} variant="h1">
         <b>Cuentanos tu idea o problema</b>
       </Typography>
-      <form name="contact-form" method="POST">
-        <input type="hidden" name="form-name" value="contact-form" />
+      <form name="contact" method="POST">
+        <input type="hidden" name="form-name" value="contact" />
         <div className={classes.labelContent}>
         <label className={classes.labelInput} htmlFor={'email'}>
           <Typography className={classes.label} variant="h6">
@@ -71,14 +71,14 @@ const ContactForm = () => {
             Nombre
           </Typography>
         </label>
-        <Input className={classes.Input} placeholder={"Tu nombre"} type="text" name="name"/>
+        <Input className={classes.Input} placeholder={"Tu nombre"} type="text" name="nombre"/>
         <label className={classes.labelInput} htmlFor={'empresa'}>
           <Typography className={classes.label} variant="h6" style={{marginTop: 10}}>
             Empresa
           </Typography>
         </label>
         <Input className={classes.Input} type="text" id={'empresa'} name="empresa"/>
-        <label className={classes.labelInput} htmlFor={'empresa'}>
+        <label className={classes.labelInput} htmlFor={'proyecto'}>
           <Typography className={classes.label} variant="h6" style={{marginTop: 10}}>
             Proyecto
           </Typography>
