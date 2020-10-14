@@ -48,7 +48,7 @@ const ContactForm = () => {
   const classes = useStyles()
   return (
     <Grid className={classes.container} item xs={12} sm={6}>
-      <form name="contacto" netlify netlify-honeypot="bot-field" hidden>
+      <form name="contact" netlify netlify-honeypot="bot-field" hidden>
         <input type="email" name="correo" />
         <input type="text" name="nombre" />
         <input type="text" name="empresa" />
@@ -57,23 +57,7 @@ const ContactForm = () => {
       <Typography className={classes.text} variant="h1">
         <b>Cuentanos tu idea o problema</b>
       </Typography>
-      <Typography variant="h1">
-        <b>NewsLetter</b>
-      </Typography>
-      <Typography className={classes.text} variant="h6">
-        Déjanos tu email para enviarte las mejores noticias sobre las TIC, que seguramente te interesaran para que tu área de TI este siempre al día
-      </Typography>
-      <form style={{ display: "flex" }} name="contacto" method="POST">
-        <input type="hidden" name="form-name" value="contacto" />
-        <Input className={classes.input} type="email" name="email" /><br/>
-        <Input className={classes.input} type="text" name="nombre" />
-        <Input className={classes.input} type="text" name="empresa" />
-        <Input className={classes.input} type="text" name="proyecto" />
-        <Button variant="contained" color="secondary" type='submit'>
-          <Typography className={classes.buttonText}>Suscribirme</Typography>
-        </Button>
-      </form>
-      {/* <form method="POST">
+      <form method="POST">
         <input type="hidden" name="form-name" value="contact" />
         <div className={classes.labelContent}>
         <label className={classes.labelInput} htmlFor={'email'}>
@@ -104,7 +88,7 @@ const ContactForm = () => {
         <Button className={classes.button} variant="contained" color="secondary" type='submit'>
           <Typography className={classes.buttonText}>Enviar</Typography>
         </Button>
-      </form> */}
+      </form>
     </Grid>
   )
 }
