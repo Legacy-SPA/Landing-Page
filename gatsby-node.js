@@ -15,5 +15,7 @@ exports.onCreatePage = async ({ page, actions }) => {
     page.matchPath = "/*"
     // Update the page.
     createPage(page)
+  } else {
+    
   }
 }

@@ -1,6 +1,6 @@
 import React from "react"
 import { makeStyles } from "@material-ui/core/styles"
-import { Typography, Input, Grid, Button } from "@material-ui/core"
+import { Typography, Input, Grid, Button, TextareaAutosize } from "@material-ui/core"
 
 const useStyles = makeStyles(theme => {
   return {
@@ -49,7 +49,7 @@ const ContactForm = () => {
   return (
     <Grid className={classes.container} item xs={12} sm={6}>
       <Typography className={classes.text} variant="h1">
-        <b>Formulario de Contacto</b>
+        <b>Cuentanos tu idea o problema</b>
       </Typography>
       <div className={classes.labelContent}>
         <label className={classes.labelInput} htmlFor={'email'}>
@@ -59,24 +59,24 @@ const ContactForm = () => {
         </label>
         <Input className={classes.Input} placeholder={"info@example.com"} type="text" />
         <label className={classes.labelInput} htmlFor={'nombre'}>
-          <Typography className={classes.label} variant="h6">
+          <Typography className={classes.label} variant="h6" style={{marginTop: 10}}>
             Nombre
           </Typography>
         </label>
         <Input className={classes.Input} placeholder={"Tu nombre"} type="text" />
         <label className={classes.labelInput} htmlFor={'empresa'}>
-          <Typography className={classes.label} variant="h6">
+          <Typography className={classes.label} variant="h6" style={{marginTop: 10}}>
             Empresa
           </Typography>
         </label>
         <Input className={classes.Input} type="text" id={'empresa'} />
-        <label className={classes.checkInput}>
-          <input type="checkbox" />
-          <Typography variant="h6" className={classes.label}>
-            Acepto la Política de provacidad y los Terminos y condiciones.
+        <label className={classes.labelInput} htmlFor={'empresa'}>
+          <Typography className={classes.label} variant="h6" style={{marginTop: 10}}>
+            Proyecto
           </Typography>
         </label>
-      </div>
+        <TextareaAutosize className={classes.Input} type="text" id={'idea'} rows="4" cols="50"></TextareaAutosize>
+        </div>
       <Button className={classes.button} variant="contained" color="secondary">
         <Typography className={classes.buttonText}>Enviar</Typography>
       </Button>

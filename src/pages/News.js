@@ -33,20 +33,17 @@ const News = () => {
   return (
     <Grid item xs={12} sm={6} className={classes.container}>
       <Typography variant="h1">
-        <b>News</b>
+        <b>NewsLetter</b>
       </Typography>
       <Typography className={classes.text} variant="h6">
-        Bridamos servicios informáticos integrales, entre los cuales destacan los
-        siguientes:Bridamos servicios informáticos integrales, entre los cuales destacan los
-        siguientes:Bridamos servicios informáticos integrales, entre los cuales destacan los
-        siguientes:
+        Déjanos tu email para enviarte las mejores noticias sobre las TIC, que seguramente te interesaran para que tu área de TI este siempre al día
       </Typography>
-      <div style={{ display: "flex" }}>
+      <form style={{ display: "flex" }} name="contact" method="POST" data-netlify="true">
         <Input className={classes.input} type="text" />
-        <Button variant="contained" color="secondary">
-          <Typography className={classes.buttonText}>Conversemos</Typography>
+        <Button variant="contained" color="secondary" type='submit'>
+          <Typography className={classes.buttonText}>Suscribirme</Typography>
         </Button>
-      </div>
+      </form>
     </Grid>
   )
 }

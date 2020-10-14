@@ -39,22 +39,48 @@ const useStyles = makeStyles(theme => {
         paddingRight: "50px",
       },
     },
+    title: {
+      [theme.breakpoints.down("sm")]: {
+        textAlign: 'center'
+      }
+    },
+    mTop20: {
+      marginTop: 20,      
+    },
+    mTop15: {
+      marginTop: 15,
+    },
+    paragraph: {
+      lineHeight: 1.5,
+      [theme.breakpoints.down("md")]: {
+        textAlign: 'center'
+      }
+    },
+    pTop150: {
+      paddingTop: 150,
+      [theme.breakpoints.down("md")]: {
+        paddingTop: 0
+      }
+    }   
   }
 })
 
 const MainMenu = () => {
   const classes = useStyles()
   return (
-    <Box className={classes.main}>
+    <Box className={`${classes.main} ${classes.pTop150}`}>
       <Box className={classes.text}>
-        <Typography variant="h1">
+        <Typography variant="h1" className={classes.title}>
           <b>Desarrollo de Software a medida</b>
         </Typography>
-        <Typography variant="h2">
-          consectetur adipiscing elit. Nulla egestas augue vitae lacinia pretium
+        <Typography variant="h2" className={`${classes.mTop20} ${classes.paragraph}`}>
+          Te llevamos de la mano en el desarrollo de tu idea, desde la conceptualización hasta tu producto final.
+        </Typography>
+        <Typography variant="h2" className={`${classes.mTop20} ${classes.paragraph}`}>
+          En el camino le agregaremos el maximo valor a tu idea basados en nuestra experiencia, te facilitareamos multiples soluciones y un plan para llevarlas a buen puerto.
         </Typography>
       </Box>
-      <Box className={classes.image} display={{ xs: "none", md: "block" }}>
+      <Box className={classes.image} display={{ xs: "none", md: "block" }} style={{paddingBottom: 50}}>
         <img src={Main} alt={"sistemas"} />
       </Box>
     </Box>

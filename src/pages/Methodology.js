@@ -19,6 +19,9 @@ const useStyles = makeStyles(theme => {
       display: "flex",
       flexDirection: "column",
       justifyContent: "space-between",
+      [theme.breakpoints.down("sm")]: {
+        textAlign: 'center'
+      }
     },
     image: {
       padding: "0px",
@@ -39,12 +42,9 @@ const Methodology = (props) => {
         <Typography variant="h1">
           <b>Nuestra metodología</b>
         </Typography>
-        <Typography variant="h2">
+        <Typography variant="h2" style={{marginTop: 30}}>
           <small>
-            consectetur adipiscing elit. Nulla egestas augue vitae lacinia pretium consectetur
-            adipiscing elit. Nulla egestas augue vitae lacinia pretium consectetur adipiscing elit.
-            Nulla egestas augue vitae lacinia pretium consectetur adipiscing elit. Nulla egestas
-            augue vitae lacinia pretium consectetur adip.
+            Es entender tu negocio para proponerte las mejores soluciones que se adapten a los cambios propios de tu modelo, comenzamos con una completa consultoría y asesoría, gestionamos tu proyecto para el cumplimiento de los plazos, organizamos tu infraestructura, orquestamos todos tus procesos y equipos de desarrollo y los que mas nos gusta aseguramos la seguridad y calidad de tus productos, hasta entregarte las llaves de tu auto nuevo.
           </small>
         </Typography>
       </Box>
