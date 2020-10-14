@@ -85,7 +85,7 @@ const ContactForm = () => {
         </label>
         <TextareaAutosize className={classes.Input} type="text" rows="4" cols="50" name="proyecto"></TextareaAutosize>
         </div>
-        <Button className={classes.button} variant="contained" color="secondary">
+        <Button className={classes.button} variant="contained" color="secondary" type='submit'>
           <Typography className={classes.buttonText}>Enviar</Typography>
         </Button>
       </form>
