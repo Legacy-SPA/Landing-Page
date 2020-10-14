@@ -1,6 +1,5 @@
 import React from "react"
 import { Grid, Typography } from "@material-ui/core"
-import Logo from "../images/cms.svg"
 import Dreamit from "../images/clients/dreamit.png"
 import Orionx from "../images/clients/orionx.png"
 import Zinkerz from "../images/clients/zinkerz.png"
@@ -51,7 +50,6 @@ const useStyles = makeStyles(theme => {
     },
     logo: {
       maxWidth: 100,
-      maxWidth: 100
     }
   }
 })
