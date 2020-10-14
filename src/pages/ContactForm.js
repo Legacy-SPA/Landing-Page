@@ -49,7 +49,7 @@ const ContactForm = () => {
   return (
     <Grid className={classes.container} item xs={12} sm={6}>
       <form name="contact-form" netlify netlify-honeypot="bot-field" hidden>
-        <input type="email" name="email" />
+        <input type="email" name="correo" />
         <input type="text" name="name" />
         <input type="text" name="empresa" />
         <textarea name="proyecto"></textarea>
@@ -65,7 +65,7 @@ const ContactForm = () => {
             Email
           </Typography>
         </label>
-        <Input className={classes.Input} placeholder={"info@example.com"} type="text" name="email"/>
+        <Input className={classes.Input} placeholder={"info@example.com"} type="text" name="correo"/>
         <label className={classes.labelInput} htmlFor={'nombre'}>
           <Typography className={classes.label} variant="h6" style={{marginTop: 10}}>
             Nombre
