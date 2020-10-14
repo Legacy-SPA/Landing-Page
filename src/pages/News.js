@@ -32,13 +32,17 @@ const News = () => {
   const classes = useStyles()
   return (
     <Grid item xs={12} sm={6} className={classes.container}>
+      <form name="newsletter" netlify netlify-honeypot="bot-field" hidden>
+        <input type="email" name="email" />
+      </form>
       <Typography variant="h1">
         <b>NewsLetter</b>
       </Typography>
       <Typography className={classes.text} variant="h6">
         Déjanos tu email para enviarte las mejores noticias sobre las TIC, que seguramente te interesaran para que tu área de TI este siempre al día
       </Typography>
-      <form style={{ display: "flex" }} name="newsletter" method="POST" data-netlify="true">
+      <form style={{ display: "flex" }} name="newsletter" method="POST">
+        <input type="hidden" name="form-name" value="newsletter" />
         <Input className={classes.input} type="text" name="email" />
         <Button variant="contained" color="secondary" type='submit'>
           <Typography className={classes.buttonText}>Suscribirme</Typography>
