@@ -4,6 +4,8 @@ import { Typography, Grid } from "@material-ui/core"
 import cms from "../images/cms.svg"
 import layers from "../images/layers.svg"
 import project from "../images/project.svg"
+import cloud from "../images/clients/Cloud.svg"
+import proyecto from "../images/clients/Proyecto.svg"
 import appDevelopment from "../images/appDevelopment.svg"
 
 const useStyles = makeStyles(theme => ({
@@ -102,7 +104,7 @@ const Services = (props) => {
           </Typography>
         </Grid>
         <Grid xs={12} sm={6} lg={4} className={classes.itemService}>
-          <img src={cms} alt={"Software"} />
+          <img src={proyecto} alt={"Software"}  style={{width: 52, height: 49}} />
           <Typography className={classes.serviceDesc} variant="h2">
             <b>Gestión de Proyectos</b>
           </Typography>
@@ -111,7 +113,7 @@ const Services = (props) => {
           </Typography>
         </Grid>
         <Grid xs={12} sm={6} lg={4} className={classes.itemService}>
-          <img src={appDevelopment} alt={"Apps"} />
+          <img src={cloud} alt={"Apps"} style={{width: 52, height: 49}}/>
           <Typography className={classes.serviceDesc} variant="h2">
             <b>Arquitectura en la Nube</b>
           </Typography>

@@ -1,11 +1,15 @@
 import React from "react"
 import { Typography, Grid } from "@material-ui/core"
 import { makeStyles } from "@material-ui/core/styles"
+import udd from "../images/clients/uddventures.svg"
+import corfo from "../images/clients/corfo.png"
+import linkedin from "../images/clients/linkedin.svg"
+import instagram from "../images/clients/instagram.svg"
 
 const useStyles = makeStyles(theme => {
   return {
     main: {
-      width: "80%",
+      width: "90%",
       padding: "5% 10%",
       display: "flex",
       backgroundColor: theme.palette.background.paper,
@@ -36,24 +40,22 @@ const MainMenu = () => {
             <b>Dirección</b>
           </Typography>
           <Typography variant="h6" className={classes.textLabel}>
-            <small>consectetur adipiscing elit. Nulla egestas augue vitae lacinia pretium.</small>
+            <small>Amunategui N°232, Oficina 1904, Santiago</small>
           </Typography>
         </Grid>
         <Grid xs={12} md={4} className={classes.contentText}>
           <Typography variant="h2" className={classes.text}>
-            <b>Información</b>
+            <b>Somos parte de</b>
           </Typography>
-          <Typography variant="h6" className={classes.textLabel}>
-            <small>consectetur adipiscing elit. Nulla egestas augue vitae lacinia pretium.</small>
-          </Typography>
+          <img src={udd} alt={"Apps"} style={{width: 100, height: 49}}/>
+          <img src={corfo} alt={"Apps"} style={{maxWidth: 100, height: 'auto', marginLeft: 20}}/>
         </Grid>
         <Grid xs={12} md={4} className={classes.contentText}>
           <Typography variant="h2" className={classes.text}>
             <b>Redes Sociales</b>
           </Typography>
-          <Typography variant="h6" className={classes.textLabel}>
-            <small>consectetur adipiscing elit. Nulla egestas augue vitae lacinia pretium.</small>
-          </Typography>
+          <img src={linkedin} alt={"Apps"} style={{width: 40, height: 40, marginTop: 10}}/>
+          <img src={instagram} alt={"Apps"} style={{width: 40, height: 40, marginLeft: 20}}/>
         </Grid>
       </Grid>
     </div>
