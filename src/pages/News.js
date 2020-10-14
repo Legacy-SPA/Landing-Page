@@ -32,7 +32,7 @@ const News = () => {
   const classes = useStyles()
   return (
     <Grid item xs={12} sm={6} className={classes.container}>
-      <form name="newsletter" netlify netlify-honeypot="bot-field" hidden>
+      {/* <form name="newsletter" netlify netlify-honeypot="bot-field" hidden>
         <input type="email" name="email" />
       </form>
       <Typography variant="h1">
@@ -47,7 +47,7 @@ const News = () => {
         <Button variant="contained" color="secondary" type='submit'>
           <Typography className={classes.buttonText}>Suscribirme</Typography>
         </Button>
-      </form>
+      </form> */}
     </Grid>
   )
 }
