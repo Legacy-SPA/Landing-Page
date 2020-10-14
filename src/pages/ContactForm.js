@@ -57,9 +57,6 @@ const ContactForm = () => {
       <Typography className={classes.text} variant="h1">
         <b>Cuentanos tu idea o problema</b>
       </Typography>
-      <form name="contact" netlify netlify-honeypot="bot-field" hidden>
-        <input type="email" name="email" />
-      </form>
       <Typography variant="h1">
         <b>NewsLetter</b>
       </Typography>
