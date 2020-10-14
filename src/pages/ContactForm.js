@@ -48,17 +48,17 @@ const ContactForm = () => {
   const classes = useStyles()
   return (
     <Grid className={classes.container} item xs={12} sm={6}>
-      <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+      <form name="contactos" netlify netlify-honeypot="bot-field" hidden>
         <input type="email" name="correo" />
         <input type="text" name="nombre" />
         <input type="text" name="empresa" />
         <textarea name="proyecto"></textarea>
-      </form>
+      </form>      
       <Typography className={classes.text} variant="h1">
         <b>Cuentanos tu idea o problema</b>
       </Typography>
-      <form name="contact" method="POST">
-        <input type="hidden" name="form-name" value="contact" />
+      <form method="POST">
+        <input type="hidden" name="form-name" value="contactos" />
         <div className={classes.labelContent}>
         <label className={classes.labelInput} htmlFor={'email'}>
           <Typography className={classes.label} variant="h6">
@@ -83,7 +83,7 @@ const ContactForm = () => {
             Proyecto
           </Typography>
         </label>
-        <textarea className={classes.Input} type="text" rows="4" cols="50" name="proyecto"></textarea>
+        <textarea className={classes.Input} rows="4" cols="50" name="proyecto"></textarea>
         </div>
         <Button className={classes.button} variant="contained" color="secondary" type='submit'>
           <Typography className={classes.buttonText}>Enviar</Typography>
