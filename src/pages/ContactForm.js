@@ -48,7 +48,7 @@ const ContactForm = () => {
   const classes = useStyles()
   return (
     <Grid className={classes.container} item xs={12} sm={6}>
-      <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+      <form name="contact-form" netlify netlify-honeypot="bot-field" hidden>
         <input type="email" name="correo" />
         <input type="text" name="nombre" />
         <input type="text" name="empresa" />
@@ -57,8 +57,8 @@ const ContactForm = () => {
       <Typography className={classes.text} variant="h1">
         <b>Cuentanos tu idea o problema</b>
       </Typography>
-      <form name="contact" method="POST">
-        <input type="hidden" name="form-name" value="contact" />
+      <form name="contact-form" method="POST">
+        <input type="hidden" name="form-name" value="contact-form" />
         <div className={classes.labelContent}>
         <label className={classes.labelInput} htmlFor={'email'}>
           <Typography className={classes.label} variant="h6">
