@@ -38,7 +38,7 @@ const News = () => {
       <Typography className={classes.text} variant="h6">
         Déjanos tu email para enviarte las mejores noticias sobre las TIC, que seguramente te interesaran para que tu área de TI este siempre al día
       </Typography>
-      <form style={{ display: "flex" }} name="newsletter" method="POST" data-netlify="true" data-netlify-honeypot="bot-file">
+      <form style={{ display: "flex" }} name="newsletter" method="POST" data-netlify="true">
         <Input className={classes.input} type="text" name="email" />
         <Button variant="contained" color="secondary" type='submit'>
           <Typography className={classes.buttonText}>Suscribirme</Typography>
