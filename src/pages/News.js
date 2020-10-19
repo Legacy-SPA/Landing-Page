@@ -55,7 +55,7 @@ const News = () => {
       </Typography>
       <form style={{ display: "flex" }} name="newsletter" method="POST" >
         <input type="hidden" name="form-name" value="newsletter" />
-        <Input className={classes.input} type="text" name="email" />
+        <Input className={classes.input} type="email" name="email" />
         <Button variant="contained" color="secondary" type='submit'>
           <Typography className={classes.buttonText}>Suscribirme</Typography>
         </Button>
