@@ -75,14 +75,14 @@ const ContactForm = (props) => {
         <b>Cuentanos tu idea o problema</b>
       </Typography>
       <form ref={formRef} name="Contact Form" method="POST" data-netlify="true" onSubmit={handleSubmit}>
-        <input ref='form-name' type="hidden" name="form-name" value="Contact Form" />
+        <input type="hidden" name="form-name" value="Contact Form" />
         <div className={classes.labelContent}>
         <label className={classes.labelInput} htmlFor={'email'}>
           <Typography className={classes.label} variant="h6">
             Email
           </Typography>
         </label>
-        <Input ref='email' className={classes.Input} placeholder={"info@example.com"} type="email" name="correo"
+        <Input className={classes.Input} placeholder={"info@example.com"} type="email" name="correo"
           onChange={(e) => {
             setDatos({... datos, email: e.target.value})
           }}/>
@@ -91,7 +91,7 @@ const ContactForm = (props) => {
             Nombre
           </Typography>
         </label>
-        <Input ref='nombre' className={classes.Input} placeholder={"Tu nombre"} type="text" name="nombre"
+        <Input className={classes.Input} placeholder={"Tu nombre"} type="text" name="nombre"
           onChange={(e) => {
             setDatos({... datos, nombre: e.target.value})
           }}/>
@@ -100,7 +100,7 @@ const ContactForm = (props) => {
             Empresa
           </Typography>
         </label>
-        <Input ref={'empresa'} className={classes.Input} type="text" name="empresa"
+        <Input className={classes.Input} type="text" name="empresa"
           onChange={(e) => {
             setDatos({... datos, empresa: e.target.value})
           }}/>
@@ -109,7 +109,7 @@ const ContactForm = (props) => {
             Proyecto
           </Typography>
         </label>
-        <textarea ref={'proyecto'} className={classes.Input} rows="4" cols="50" name="proyecto"
+        <textarea className={classes.Input} rows="4" cols="50" name="proyecto"
           onChange={(e) => {
             setDatos({... datos, proyecto: e.target.value})
           }}></textarea>
