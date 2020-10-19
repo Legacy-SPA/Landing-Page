@@ -70,7 +70,7 @@ const Services = (props) => {
         <Grid xs={12} sm={6} lg={4} className={classes.itemService}>
           <img src={project} alt={"Proyecto"} />
           <Typography className={classes.serviceDesc} variant="h2">
-            <b>Consultoría y asesoría</b>
+            <b>Auditoria e Intervencion de Software</b>
           </Typography>
           <Typography className={`${classes.serviceDesc} ${classes.lineHigh} ${classes.paragraph}`} variant="h6">
             Llevamos tu idea de negocio, o tu negocio al siguiente nivel, para ello te prestamos la asesoría en base a consultorías con un equipo de profesionales como mas de 20 años de experiencia.
@@ -97,25 +97,42 @@ const Services = (props) => {
         <Grid xs={12} sm={6} lg={4} className={classes.itemService}>
           <img alt={"Integración"} src={layers} />
           <Typography className={classes.serviceDesc} variant="h2">
-            <b>Integración de plataformas</b>
+            <b>Servicio de Equipo de Desarrollo Dedicado.</b>
           </Typography>
           <Typography className={`${classes.serviceDesc} ${classes.lineHigh} ${classes.paragraph}`} variant="h6">
-          Quieres implementar una pasarela de pago ó quieres implementar un servicio de terceros como una chat o un servicio helpdesk y no sabes como integrarlo a tu aplicación actual, confía en nosotros que haremos tu idea de integración posible.
           </Typography>
         </Grid>
         <Grid xs={12} sm={6} lg={4} className={classes.itemService}>
           <img src={proyecto} alt={"Software"}  style={{width: 52, height: 49}} />
           <Typography className={classes.serviceDesc} variant="h2">
-            <b>Gestión de Proyectos</b>
+            <b>Automatizacion robotica de procesos (RPA)</b>
           </Typography>
           <Typography className={`${classes.serviceDesc} ${classes.lineHigh} ${classes.paragraph}`} variant="h6">
-            Te apoyamos en el análisis situaciones de tus equipos de desarrollo, analizamos tus procesos y te apoyamos en la construcción de equipo mas solido y eficiente, Coaching, Devops, Planificación, Cálculos de Esfuerzos, entre otras técnicas que harán tu área TI, una equipo TI de clase mundial.
+            Automatización de procesos mediante el uso de robots.
           </Typography>
         </Grid>
         <Grid xs={12} sm={6} lg={4} className={classes.itemService}>
           <img src={cloud} alt={"Apps"} style={{width: 52, height: 49}}/>
           <Typography className={classes.serviceDesc} variant="h2">
-            <b>Arquitectura en la Nube</b>
+            <b>DevOps</b>
+          </Typography>
+          <Typography className={`${classes.serviceDesc} ${classes.lineHigh} ${classes.paragraph}`} variant="h6">
+          Quieres migrar la arquitectura de tus aplicaciones a una arquitectura robusta, escalable y mas económica, tenemos la solución para ti, con nuestra experiencia tendrás en tus aplicaciones el mejor rendimiento al menor costo.
+          </Typography>
+        </Grid>
+        <Grid xs={12} sm={6} lg={4} className={classes.itemService}>
+          <img src={cloud} alt={"Apps"} style={{width: 52, height: 49}}/>
+          <Typography className={classes.serviceDesc} variant="h2">
+            <b>Blockchain</b>
+          </Typography>
+          <Typography className={`${classes.serviceDesc} ${classes.lineHigh} ${classes.paragraph}`} variant="h6">
+          Quieres migrar la arquitectura de tus aplicaciones a una arquitectura robusta, escalable y mas económica, tenemos la solución para ti, con nuestra experiencia tendrás en tus aplicaciones el mejor rendimiento al menor costo.
+          </Typography>
+        </Grid>
+        <Grid xs={12} sm={6} lg={4} className={classes.itemService}>
+          <img src={cloud} alt={"Apps"} style={{width: 52, height: 49}}/>
+          <Typography className={classes.serviceDesc} variant="h2">
+            <b>Inteligencia Artificial</b>
           </Typography>
           <Typography className={`${classes.serviceDesc} ${classes.lineHigh} ${classes.paragraph}`} variant="h6">
           Quieres migrar la arquitectura de tus aplicaciones a una arquitectura robusta, escalable y mas económica, tenemos la solución para ti, con nuestra experiencia tendrás en tus aplicaciones el mejor rendimiento al menor costo.

@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useState} from "react"
 import { makeStyles } from "@material-ui/core/styles"
 import { Typography, Input, Grid, Button, TextareaAutosize } from "@material-ui/core"
 
@@ -46,6 +46,18 @@ const useStyles = makeStyles(theme => {
 })
 const ContactForm = () => {
   const classes = useStyles()
+  const [datos, setDatos] = useState({})
+  const handleSubmit = e => {
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encodeURI({ ...datos, "form-name": "contact" })
+    }).then(() => alert("Success!"))
+      .catch(error => alert(error));
+
+    e.preventDefault();
+  };
+
   return (
     <Grid className={classes.container} item xs={12} sm={6}>
       <form name="contact" netlify netlify-honeypot="bot-field" hidden>
@@ -57,7 +69,7 @@ const ContactForm = () => {
       <Typography className={classes.text} variant="h1">
         <b>Cuentanos tu idea o problema</b>
       </Typography>
-      <form method="POST">
+      <form type="POST" onSubmit={handleSubmit}>
         <input type="hidden" name="form-name" value="contact" />
         <div className={classes.labelContent}>
         <label className={classes.labelInput} htmlFor={'email'}>
@@ -65,27 +77,39 @@ const ContactForm = () => {
             Email
           </Typography>
         </label>
-        <Input className={classes.Input} placeholder={"info@example.com"} type="email" name="correo"/>
+        <Input className={classes.Input} placeholder={"info@example.com"} type="email" name="correo" 
+          onChange={(e) => {
+            setDatos({... datos, email: e.target.value})
+          }}/>
         <label className={classes.labelInput} htmlFor={'nombre'}>
           <Typography className={classes.label} variant="h6" style={{marginTop: 10}}>
             Nombre
           </Typography>
         </label>
-        <Input className={classes.Input} placeholder={"Tu nombre"} type="text" name="nombre"/>
+        <Input className={classes.Input} placeholder={"Tu nombre"} type="text" name="nombre"
+          onChange={(e) => {
+            setDatos({... datos, nombre: e.target.value})
+          }}/>
         <label className={classes.labelInput} htmlFor={'empresa'}>
           <Typography className={classes.label} variant="h6" style={{marginTop: 10}}>
             Empresa
           </Typography>
         </label>
-        <Input className={classes.Input} type="text" name="empresa"/>
+        <Input className={classes.Input} type="text" name="empresa" 
+          onChange={(e) => {
+            setDatos({... datos, empresa: e.target.value})
+          }}/>
         <label className={classes.labelInput} htmlFor={'proyecto'}>
           <Typography className={classes.label} variant="h6" style={{marginTop: 10}}>
             Proyecto
           </Typography>
         </label>
-        <textarea className={classes.Input} rows="4" cols="50" name="proyecto"></textarea>
+        <textarea className={classes.Input} rows="4" cols="50" name="proyecto"
+          onChange={(e) => {
+            setDatos({... datos, proyecto: e.target.value})
+          }}></textarea>
         </div>
-        <Button className={classes.button} variant="contained" color="secondary" type='submit'>
+        <Button className={classes.button} variant="contained" color="secondary" type="submit">
           <Typography className={classes.buttonText}>Enviar</Typography>
         </Button>
       </form>

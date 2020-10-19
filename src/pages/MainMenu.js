@@ -77,7 +77,7 @@ const MainMenu = () => {
           Te llevamos de la mano en el desarrollo de tu idea, desde la conceptualización hasta tu producto final.
         </Typography>
         <Typography variant="h2" className={`${classes.mTop20} ${classes.paragraph}`}>
-          En el camino le agregaremos el maximo valor a tu idea basados en nuestra experiencia, te facilitareamos multiples soluciones y un plan para llevarlas a buen puerto.
+          En el camino le agregaremos el máximo valor a tu idea basados en nuestra experiencia, te facilitaremos múltiples soluciones y un plan para llevarlas a buen puerto.
         </Typography>
       </Box>
       <Box className={classes.image} display={{ xs: "none", md: "block" }} style={{paddingBottom: 50}}>
