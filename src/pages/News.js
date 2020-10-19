@@ -44,9 +44,6 @@ const News = () => {
 
   return (
     <Grid item xs={12} sm={6} className={classes.container}>
-      <form name="newsletter" netlify netlify-honeypot="bot-field" hidden>
-        <input type="email" name="email" />
-      </form>
       <Typography variant="h1">
         <b>NewsLetter</b>
       </Typography>
