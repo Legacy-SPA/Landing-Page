@@ -54,7 +54,7 @@ const ContactForm = (props) => {
   const handleSubmit = e => {
     e.preventDefault();
     const axiosOptions = {
-      url: props.location.pathname,
+      url: '/',
       method: "post",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       data: qs.stringify(datos),
