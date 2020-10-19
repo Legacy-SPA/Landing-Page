@@ -109,9 +109,9 @@ const ContactForm = (props) => {
             Proyecto
           </Typography>
         </label>
-        <Input className={classes.Input} type="text" name="empresa"
+        <Input className={classes.Input} type="text" name="proyecto"
           onChange={(e) => {
-            setDatos({... datos, empresa: e.target.value})
+            setDatos({... datos, proyecto: e.target.value})
           }}/>
         </div>
         {
