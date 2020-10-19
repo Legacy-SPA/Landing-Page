@@ -1,6 +1,8 @@
-import React, {useState} from "react"
+import React, { createRef, useState } from "react"
 import { makeStyles } from "@material-ui/core/styles"
-import { Typography, Input, Grid, Button, TextareaAutosize } from "@material-ui/core"
+import { Typography, Input, Grid, Button } from "@material-ui/core"
+import * as qs from 'query-string'
+import axios from 'axios'
 
 const useStyles = makeStyles(theme => {
   return {
@@ -44,40 +46,44 @@ const useStyles = makeStyles(theme => {
     },
   }
 })
-const ContactForm = () => {
+const ContactForm = (props) => {
   const classes = useStyles()
+  const [formRef] = useState(createRef())
   const [datos, setDatos] = useState({})
+  const [success, setSuccess] = useState(false)
   const handleSubmit = e => {
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encodeURI({ ...datos, "form-name": "contact" })
-    }).then(() => alert("Success!"))
-      .catch(error => alert(error));
-
     e.preventDefault();
+    const axiosOptions = {
+      url: props.location.pathname,
+      method: "post",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      data: qs.stringify(datos),
+    }
+    axios(axiosOptions)
+      .then(response => {
+        setSuccess(true)
+        formRef.current.reset()
+      })
+      .catch(err =>
+        console.log(err)
+      )
+
   };
 
   return (
     <Grid className={classes.container} item xs={12} sm={6}>
-      <form name="contact" netlify netlify-honeypot="bot-field" hidden>
-        <input type="email" name="correo" />
-        <input type="text" name="nombre" />
-        <input type="text" name="empresa" />
-        <input type="text" name="proyecto" />
-      </form>      
       <Typography className={classes.text} variant="h1">
         <b>Cuentanos tu idea o problema</b>
       </Typography>
-      <form type="POST" onSubmit={handleSubmit}>
-        <input type="hidden" name="form-name" value="contact" />
+      <form ref={formRef} name="Contact Form" method="POST" data-netlify="true" onSubmit={handleSubmit}>
+        <input ref='form-name' type="hidden" name="form-name" value="Contact Form" />
         <div className={classes.labelContent}>
         <label className={classes.labelInput} htmlFor={'email'}>
           <Typography className={classes.label} variant="h6">
             Email
           </Typography>
         </label>
-        <Input className={classes.Input} placeholder={"info@example.com"} type="email" name="correo" 
+        <Input ref='email' className={classes.Input} placeholder={"info@example.com"} type="email" name="correo"
           onChange={(e) => {
             setDatos({... datos, email: e.target.value})
           }}/>
@@ -86,7 +92,7 @@ const ContactForm = () => {
             Nombre
           </Typography>
         </label>
-        <Input className={classes.Input} placeholder={"Tu nombre"} type="text" name="nombre"
+        <Input ref='nombre' className={classes.Input} placeholder={"Tu nombre"} type="text" name="nombre"
           onChange={(e) => {
             setDatos({... datos, nombre: e.target.value})
           }}/>
@@ -95,7 +101,7 @@ const ContactForm = () => {
             Empresa
           </Typography>
         </label>
-        <Input className={classes.Input} type="text" name="empresa" 
+        <Input ref={'empresa'} className={classes.Input} type="text" name="empresa"
           onChange={(e) => {
             setDatos({... datos, empresa: e.target.value})
           }}/>
@@ -104,11 +110,14 @@ const ContactForm = () => {
             Proyecto
           </Typography>
         </label>
-        <textarea className={classes.Input} rows="4" cols="50" name="proyecto"
+        <textarea ref={'proyecto'} className={classes.Input} rows="4" cols="50" name="proyecto"
           onChange={(e) => {
             setDatos({... datos, proyecto: e.target.value})
           }}></textarea>
         </div>
+        {
+          success ? <div>Enviado con Exito!</div> : null
+        }
         <Button className={classes.button} variant="contained" color="secondary" type="submit">
           <Typography className={classes.buttonText}>Enviar</Typography>
         </Button>
