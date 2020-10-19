@@ -109,10 +109,10 @@ const ContactForm = (props) => {
             Proyecto
           </Typography>
         </label>
-        <textarea className={classes.Input} rows="4" cols="50" name="proyecto"
+        <Input className={classes.Input} type="text" name="empresa"
           onChange={(e) => {
-            setDatos({... datos, proyecto: e.target.value})
-          }}></textarea>
+            setDatos({... datos, empresa: e.target.value})
+          }}/>
         </div>
         {
           success ? <div>Enviado con Exito!</div> : null
