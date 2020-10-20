@@ -5,7 +5,7 @@ import MuiLayout from "../layouts/MuiLayout"
 import Landing from "./Landing"
 import NotFoundPage from "./404"
 
-const App = () => {
+const Index = () => {
   return (
     <Router>
       <MuiLayout path="/">
@@ -15,4 +15,4 @@ const App = () => {
     </Router>
   )
 }
-export default App
+export default Index
