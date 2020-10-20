@@ -1,5 +1,5 @@
 import React from "react"
-import { Typography } from "@material-ui/core"
+import { Typography, Input, Button } from "@material-ui/core"
 import { makeStyles } from "@material-ui/core/styles"
 import Main from "../images/Main.svg"
 import Box from "@material-ui/core/Box"
@@ -61,14 +61,27 @@ const useStyles = makeStyles(theme => {
       [theme.breakpoints.down("md")]: {
         paddingTop: 0
       }
-    }   
+    }, 
+    input: {
+      backgroundColor: "white",
+    },
+    form: {
+      width: '50%', 
+      alignSelf: 'center'
+    }  
   }
 })
 
-const MainMenu = () => {
+const MainMenu = (props) => {
+  const {contactRef} = props
+  const setText = () => {
+    document.getElementById("mailText").value = document.getElementById("mainMailText").value
+    document.getElementById("nameText").value = document.getElementById("mainNameText").value
+    window.scrollTo(0, contactRef.current.offsetTop - 88)
+  }
   const classes = useStyles()
   return (
-    <Box className={`${classes.main} ${classes.pTop150}`}>
+    <Box className={`${classes.main} ${classes.pTop100}`}>
       <Box className={classes.text}>
         <Typography variant="h1" className={classes.title}>
           <b>Desarrollo de Software a medida</b>
@@ -79,6 +92,24 @@ const MainMenu = () => {
         <Typography variant="h2" className={`${classes.mTop20} ${classes.paragraph}`}>
           En el camino le agregaremos el máximo valor a tu idea basados en nuestra experiencia, te facilitaremos múltiples soluciones y un plan para llevarlas a buen puerto.
         </Typography>
+        <div className={classes.form}>
+            <label className={classes.labelInput} htmlFor={'email'}>
+              <Typography className={classes.label} variant="h6">
+                Email
+              </Typography>
+            </label>
+            <Input className={classes.input} type="email" name="email" id={'mainMailText'} />
+            <label className={classes.labelInput} htmlFor={'nombre'}>
+              <Typography className={classes.label} variant="h6">
+                Nombre
+              </Typography>
+            </label>
+            <Input className={classes.input} type="text" name="nombre" id={'mainNameText'} />
+            <br/>
+            <Button variant="contained" color="secondary" type='submit' style={{marginTop: '10px'}} onClick={setText}>
+              <Typography className={classes.buttonText}>Enviar</Typography>
+            </Button>
+        </div>
       </Box>
       <Box className={classes.image} display={{ xs: "none", md: "block" }} style={{paddingBottom: 50}}>
         <img src={Main} alt={"sistemas"} />

@@ -18,7 +18,7 @@ const Landing = () => {
   return (
     <div>
       <NavBar items={items} />
-      <MainMenu />
+      <MainMenu contactRef={items[3].ref} />
       {
         items.map((item) => {
           const { Component } = item

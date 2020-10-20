@@ -83,7 +83,7 @@ const ContactForm = (props) => {
             Email
           </Typography>
         </label>
-        <Input className={classes.Input} placeholder={"info@example.com"} type="email" name="email"
+        <Input className={classes.Input} placeholder={"info@example.com"} id={'mailText'} type="email" name="email"
           onChange={(e) => {
             setDatos({... datos, email: e.target.value})
           }}/>
@@ -92,7 +92,7 @@ const ContactForm = (props) => {
             Nombre
           </Typography>
         </label>
-        <Input className={classes.Input} placeholder={"Tu nombre"} type="text" name="nombre"
+        <Input className={classes.Input} placeholder={"Tu nombre"} id={'nameText'} type="text" name="nombre"
           onChange={(e) => {
             setDatos({... datos, nombre: e.target.value})
           }}/>
