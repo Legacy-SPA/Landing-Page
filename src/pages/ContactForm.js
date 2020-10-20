@@ -80,7 +80,7 @@ const ContactForm = (props) => {
       <Typography className={classes.text} variant="h1">
         <b>Cuentanos tu idea o problema</b>
       </Typography>
-      <form ref={formRef} name="contact" method="POST" data-netlify="true" onSubmit={handleSubmit}>
+      <form name="contact" method="POST" data-netlify="true">
         <input type="hidden" name="form-name" value="contact" />
         <div className={classes.labelContent}>
         <label className={classes.labelInput} htmlFor={'email'}>
