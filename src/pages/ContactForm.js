@@ -56,8 +56,14 @@ const ContactForm = (props) => {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encodeURI({ ...datos, "form-name": "contact" })
-    }).then(() => alert("Success!"))
-      .catch(error => alert(error));
+    }).then(() => {
+      alert("Success!")
+      setSuccess(true)
+    })
+      .catch(error => {
+        alert(error)
+        setSuccess(false)
+      });
 
     e.preventDefault();
 
@@ -109,10 +115,10 @@ const ContactForm = (props) => {
             Proyecto
           </Typography>
         </label>
-        <Input className={classes.Input} type="text" name="proyecto"
+        <textarea className={classes.Input} name="proyecto"
           onChange={(e) => {
             setDatos({... datos, proyecto: e.target.value})
-          }}/>
+          }}></textarea>
         </div>
         {
           success ? <div>Enviado con Exito!</div> : null
