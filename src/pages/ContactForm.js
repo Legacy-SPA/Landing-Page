@@ -110,7 +110,7 @@ const ContactForm = (props) => {
             Empresa
           </Typography>
         </label>
-        <textarea className={classes.Input} name="proyecto"
+        <textarea className={classes.Input} form="contact" name="proyecto"
           onChange={(e) => {
             setDatos({... datos, empresa: e.target.value})
           }}></textarea>
