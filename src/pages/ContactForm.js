@@ -52,10 +52,10 @@ const ContactForm = (props) => {
   const [datos, setDatos] = useState({})
   const [success, setSuccess] = useState(false)
   const handleSubmit = e => {
-    fetch("https://flamboyant-wing-91d47e.netlify.app", {
+    fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encodeURI({ ...datos, "form-name": "contact" })
+      body: encodeURI(JSON.stringrify({ ...datos, "form-name": "contact" }))
     }).then(() => {
       alert("Success!")
       setSuccess(true)
