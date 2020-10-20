@@ -70,12 +70,12 @@ const ContactForm = (props) => {
         <input type="email" name="email" />
         <input type="text" name="nombre" />
         <input type="text" name="empresa" />
-        <textarea name="proyecto"></textarea>
+        <textarea name="proyecto"/>
       </form>
       <Typography className={classes.text} variant="h1">
         <b>Cuentanos tu idea o problema</b>
       </Typography>
-      <form name="contact" method="POST" data-netlify="true" enctype="application/x-www-form-urlencoded" onSubmit={handleSubmit}>
+      <form name="contact" method="POST" data-netlify="true" enctype="application/x-www-form-urlencoded">
         <input type="hidden" name="form-name" value="contact" />
         <div className={classes.labelContent}>
         <label className={classes.labelInput} htmlFor={'email'}>
