@@ -75,7 +75,7 @@ const ContactForm = (props) => {
       <Typography className={classes.text} variant="h1">
         <b>Cuentanos tu idea o problema</b>
       </Typography>
-      <form name="contact" method="POST" data-netlify="true" enctype="application/x-www-form-urlencoded">
+      <form name="contact" method="POST" data-netlify="true" enctype="application/x-www-form-urlencoded" onSubmit={handleSubmit}>
         <input type="hidden" name="form-name" value="contact" />
         <div className={classes.labelContent}>
         <label className={classes.labelInput} htmlFor={'email'}>
@@ -107,7 +107,7 @@ const ContactForm = (props) => {
           }}/>
           <label className={classes.labelInput} htmlFor={'proyecto'}>
           <Typography className={classes.label} variant="h6" style={{marginTop: 10}}>
-            Empresa
+            Proyecto
           </Typography>
         </label>
         <textarea className={classes.Input} form="contact" name="proyecto"
