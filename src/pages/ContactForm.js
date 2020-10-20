@@ -1,8 +1,6 @@
 import React, { createRef, useState } from "react"
 import { makeStyles } from "@material-ui/core/styles"
 import { Typography, Input, Grid, Button } from "@material-ui/core"
-import * as qs from 'query-string'
-import axios from 'axios'
 
 const useStyles = makeStyles(theme => {
   return {
@@ -55,7 +53,7 @@ const ContactForm = (props) => {
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encodeURI(JSON.stringrify({ ...datos, "form-name": "contact" }))
+      body: encodeURI(JSON.stringify({ ...datos, "form-name": "contact" }))
     }).then(() => {
       alert("Success!")
       setSuccess(true)
