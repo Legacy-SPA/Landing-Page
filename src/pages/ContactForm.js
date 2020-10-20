@@ -70,7 +70,7 @@ const ContactForm = (props) => {
         <input type="email" name="email" />
         <input type="text" name="nombre" />
         <input type="text" name="empresa" />
-        <input type="text" name="proyecto" />
+        <textarea name="proyecto"></textarea>
       </form>
       <Typography className={classes.text} variant="h1">
         <b>Cuentanos tu idea o problema</b>
