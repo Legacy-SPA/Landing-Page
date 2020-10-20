@@ -75,7 +75,6 @@ const ContactForm = (props) => {
         <input type="email" name="email" />
         <input type="text" name="nombre" />
         <input type="text" name="empresa" />
-        <input type="text" name="proyecto" />
       </form>
       <Typography className={classes.text} variant="h1">
         <b>Cuentanos tu idea o problema</b>
@@ -110,15 +109,7 @@ const ContactForm = (props) => {
           onChange={(e) => {
             setDatos({... datos, empresa: e.target.value})
           }}/>
-        <label className={classes.labelInput} htmlFor={'proyecto'}>
-          <Typography className={classes.label} variant="h6" style={{marginTop: 10}}>
-            Proyecto
-          </Typography>
-        </label>
-        <textarea className={classes.Input} name="proyecto"
-          onChange={(e) => {
-            setDatos({... datos, proyecto: e.target.value})
-          }}></textarea>
+        
         </div>
         {
           success ? <div>Enviado con Exito!</div> : null
