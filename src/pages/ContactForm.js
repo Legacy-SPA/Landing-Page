@@ -66,6 +66,12 @@ const ContactForm = (props) => {
 
   return (
     <Grid className={classes.container} item xs={12} sm={6}>
+      <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+        <input type="email" name="email" />
+        <input type="text" name="nombre" />
+        <input type="text" name="empresa" />
+        <input type="text" name="proyecto" />
+      </form>
       <Typography className={classes.text} variant="h1">
         <b>Cuentanos tu idea o problema</b>
       </Typography>
