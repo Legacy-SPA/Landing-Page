@@ -38,7 +38,6 @@ const News = () => {
       body: encodeURI({ ...datos, "form-name": "newsletter" })
     }).then(() => alert("Success!"))
       .catch(error => alert(error));
-
     e.preventDefault();
   };
 
