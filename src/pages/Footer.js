@@ -10,7 +10,7 @@ const useStyles = makeStyles(theme => {
   return {
     main: {
       width: "90%",
-      padding: "5% 10%",
+      padding: "50px 0px",
       display: "flex",
       backgroundColor: theme.palette.background.paper,
     },
