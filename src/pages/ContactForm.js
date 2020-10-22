@@ -1,4 +1,4 @@
-import React, { createRef, useState} from "react"
+import React, {useState} from "react"
 import { makeStyles } from "@material-ui/core/styles"
 import { Typography, Input, Grid, Button } from "@material-ui/core"
 import emailjs from 'emailjs-com'
@@ -57,15 +57,29 @@ const ContactForm = (props) => {
   const [success, setSuccess] = useState(false)
   const [error, setError] = useState(false)
 
+  const resetInput = () => {
+    document.getElementById('mailText').value = null
+    document.getElementById('nameText').value = null
+    document.getElementById('companyText').value = null
+    document.getElementById('projectText').value = null
+  }
+
   const onSubmit = (e) => {
     e.preventDefault()
     emailjs.sendForm('service_m2xhfj5', 'template_enndpah', e.target, 'user_FSensVSZLEhow6fx4g104')
     .then(() => {
       setError(false)
       setSuccess(true)
+      resetInput()
+      setTimeout(function(){ 
+        setSuccess(false)
+       }, 5000)
     }, (err) => {
       setSuccess(false)
       setError(true)
+      setTimeout(function(){ 
+        setError(false)
+       }, 5000)
     })	 
   }
   
@@ -94,13 +108,13 @@ const ContactForm = (props) => {
               Empresa
             </Typography>
           </label>
-          <Input required className={classes.Input} type="text" name="empresa"/>
+          <Input required className={classes.Input} type="text" id={'companyText'} name="empresa"/>
           <label className={classes.labelInput} htmlFor={'proyecto'}>
             <Typography className={classes.label} variant="h6" style={{marginTop: 10}}>
               Proyecto
             </Typography>
           </label>
-          <Input required className={classes.Input} type="text" name="proyecto"/>
+          <Input required className={classes.Input} type="text" id={'projectText'} name="proyecto"/>
         </div>
         {
           success ? 

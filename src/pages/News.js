@@ -35,19 +35,31 @@ const useStyles = makeStyles(theme => {
     },
   }
 })
+
 const News = () => {
   const classes = useStyles()
   const [success, setSuccess] = useState(false)
   const [error, setError] = useState(false)
+
+  const resetInput = () => {
+    document.getElementById('newMailText').value = null
+  }
   const onSubmit = (e) => {
     e.preventDefault()
-    emailjs.sendForm('service_m2xhfj5', 'template_enndpah', e.target,'user_FSensVSZLEhow6fx4g104')
+    emailjs.sendForm('service_m2xhfj5', 'template_89fa41k', e.target,'user_FSensVSZLEhow6fx4g104')
     .then(() => {
       setError(false)
       setSuccess(true)
+      resetInput()
+      setTimeout(function(){ 
+        setSuccess(false)
+       }, 5000)
     }, (err) => {
       setSuccess(false)
       setError(true)
+      setTimeout(function(){ 
+        setError(false)
+       }, 5000)
     })	 
   }
   return (
@@ -60,7 +72,7 @@ const News = () => {
       </Typography>
       <form onSubmit={onSubmit} style={{ display: "flex" }} name="newsletter" method="POST" data-netlify="true" enctype="application/x-www-form-urlencoded" >
         <input type="hidden" name="form-name" value="newsletter" />
-        <Input className={classes.input} type="email" name="email" />
+        <Input className={classes.input} id={'newMailText'} type="email" name="email" />
         <Button variant="contained" color="secondary" type='submit'>
           <Typography className={classes.buttonText}>Suscribirme</Typography>
         </Button>
