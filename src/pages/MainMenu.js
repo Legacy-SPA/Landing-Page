@@ -64,11 +64,17 @@ const useStyles = makeStyles(theme => {
     }, 
     input: {
       backgroundColor: "white",
+      margin: '10px 0px'
     },
     form: {
+      marginTop: '10px',
       width: '50%', 
-      alignSelf: 'center'
-    }  
+      alignSelf: 'center',
+      textAlign: 'center',
+      backgroundColor: 'rgb(30, 34, 72)',
+      padding: '10px 0px',
+      borderRadius: '10px',
+    },
   }
 })
 
@@ -93,18 +99,13 @@ const MainMenu = (props) => {
           En el camino le agregaremos el máximo valor a tu idea basados en nuestra experiencia, te facilitaremos múltiples soluciones y un plan para llevarlas a buen puerto.
         </Typography>
         <div className={classes.form}>
-            <label className={classes.labelInput} htmlFor={'email'}>
+            <label className={classes.labelInput}>
               <Typography className={classes.label} variant="h6">
-                Email
+                Cotiza tu proyecto
               </Typography>
             </label>
-            <Input className={classes.input} type="email" name="email" id={'mainMailText'} />
-            <label className={classes.labelInput} htmlFor={'nombre'}>
-              <Typography className={classes.label} variant="h6">
-                Nombre
-              </Typography>
-            </label>
-            <Input className={classes.input} type="text" name="nombre" id={'mainNameText'} />
+            <Input className={classes.input} type="email" name="email" id={'mainMailText'} placeholder={'  ¿Cuál es tu email?'} />
+            <Input className={classes.input} type="text" name="nombre" id={'mainNameText'} placeholder={'  ¿Cuál es tu nombre?'} />
             <br/>
             <Button variant="contained" color="secondary" type='submit' style={{marginTop: '10px'}} onClick={setText}>
               <Typography className={classes.buttonText}>Enviar</Typography>
