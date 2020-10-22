@@ -77,8 +77,8 @@ const useStyles = makeStyles(theme => {
       display: 'flex',
       flexDirection: 'column',
       width: '40%',
-      [theme.breakpoints.up("lg")]: {
-        width: '15%',
+      [theme.breakpoints.up("xl")]: {
+        width: '25%',
         padding: '10px 20px',
       },
       [theme.breakpoints.down("lg")]: {
