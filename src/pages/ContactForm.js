@@ -45,8 +45,11 @@ const useStyles = makeStyles(theme => {
     },
     alert: {
       margin: '20px 0px',
-      backgroundColor: 'rgb(232, 240, 254)',
+      backgroundColor: 'rgb(112, 78, 246)',
       textAlign: 'center',
+      color: 'white',
+      borderRadius: '0px',
+      opacity: '0.8'
     },
   }
 })
@@ -114,11 +117,11 @@ const ContactForm = (props) => {
               Proyecto
             </Typography>
           </label>
-          <Input required className={classes.Input} type="text" id={'projectText'} name="proyecto"/>
+          <textarea required className={classes.Input} id={'projectText'} name="proyecto"></textarea>
         </div>
         {
           success ? 
-          <Typography variant="h6" className={classes.alert}>¡Enviado con Exito!</Typography> : 
+          <Typography variant="h6" className={`${classes.alert}`}>¡Enviado con Exito!</Typography> : 
           error ? <Typography variant="h6" className={classes.alert}>¡Error al enviar!</Typography> : null
         }
         <Button className={classes.button} variant="contained" color="secondary" type="submit">

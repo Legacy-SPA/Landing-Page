@@ -108,6 +108,8 @@ const MainMenu = (props) => {
     document.getElementById("mailText").value = document.getElementById("mainMailText").value
     document.getElementById("nameText").value = document.getElementById("mainNameText").value
     window.scrollTo(0, contactRef.current.offsetTop - 88)
+    document.getElementById("mainMailText").value = null
+    document.getElementById("mainNameText").value = null
   }
   const classes = useStyles()
   return (

@@ -127,6 +127,7 @@ const Services = (props) => {
             <b>Blockchain</b>
           </Typography>
           <Typography className={`${classes.serviceDesc} ${classes.lineHigh} ${classes.paragraph}`} variant="h6">
+          Conectamos tu empresa con el mundo Block Chain, automatizamos tus procesos de compra/venta de criptomonedas, para que ellos trabajen por ti.
           </Typography>
         </Grid>
         <Grid xs={12} sm={6} lg={4} className={classes.itemService}>

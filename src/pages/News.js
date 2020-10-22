@@ -34,8 +34,11 @@ const useStyles = makeStyles(theme => {
     },
     alert: {
       margin: '20px 0px',
-      backgroundColor: 'rgb(232, 240, 254)',
+      backgroundColor: 'rgb(112, 78, 246)',
       textAlign: 'center',
+      color: 'white',
+      borderRadius: '0px',
+      opacity: '0.8'
     },
   }
 })
