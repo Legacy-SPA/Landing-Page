@@ -100,7 +100,7 @@ const Services = (props) => {
             <b>Servicio de Equipo de Desarrollo Dedicado.</b>
           </Typography>
           <Typography className={`${classes.serviceDesc} ${classes.lineHigh} ${classes.paragraph}`} variant="h6">
-            No necesitas tener un equipo TI interno de desarrollo de software. Nosotros te asignamos una célula ágil de desarrollo y dedicada exclusivamente a desarrollar soluciones tecnológicas para tu empresa.
+            ¿Quiere desarrollar un nuevo software o mejorar el que tienes?. Ya no tienes porque preocuparte por tener un área TI, Nosotros te asignamos una célula ágil de desarrollo y te ayudamos a que alcances el siguiente nivel desde lo tecnologico.
           </Typography>
         </Grid>
         <Grid xs={12} sm={6} lg={4} className={classes.itemService}>
@@ -109,7 +109,7 @@ const Services = (props) => {
             <b>Automatizacion robotica de procesos (RPA)</b>
           </Typography>
           <Typography className={`${classes.serviceDesc} ${classes.lineHigh} ${classes.paragraph}`} variant="h6">
-            Eliminamos los trabajos operacionales manuales repetitivos y tediosos, a través de automatización de procesos con robots tecnológicos (RPA) que simulan el comportamiento humano.
+            Con los robots tecnológicos (RPA), te potenciamos como empresa al poder automatizar muchísimos procesos, simulando un comportamiento humano.
           </Typography>
         </Grid>
         <Grid xs={12} sm={6} lg={4} className={classes.itemService}>
@@ -136,7 +136,7 @@ const Services = (props) => {
             <b>Inteligencia Artificial</b>
           </Typography>
           <Typography className={`${classes.serviceDesc} ${classes.lineHigh} ${classes.paragraph}`} variant="h6">
-            Sistemas que identifican patrones complejos a partir de grandes volúmenes de datos (big data), siendo capaces de generar sistemas predictivos de forma fiable.
+            Si posees una gran volumen de datos de tu empresa, pero no sabes como extraer lo mejor de ellos para tu próxima estrategia comercia u operativa, con nuestros algoritmos de IA, te ayudamos a generar indicadores convencionales y no convencionales que te colaboraran en 100% a incrementar tus ventas y operaciones.
           </Typography>
         </Grid>
       </Grid>

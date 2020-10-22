@@ -63,7 +63,7 @@ const useStyles = makeStyles(theme => {
       }
     }, 
     input: {
-      backgroundColor: "white",
+      backgroundColor: "#E9F3FE",
       margin: '10px 0px',
       width: '80%',
       alignSelf: 'center'

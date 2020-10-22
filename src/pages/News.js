@@ -27,7 +27,7 @@ const useStyles = makeStyles(theme => {
     },
     input: {
       width: "80%",
-      backgroundColor: "white",
+      backgroundColor: "#E9F3FE",
     },
     buttonText: {
       fontSize: "11.2px",
