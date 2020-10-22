@@ -1,6 +1,8 @@
 import React, {useState} from "react"
 import { Input, Typography, Grid, Button } from "@material-ui/core"
 import { makeStyles } from "@material-ui/core/styles"
+import emailjs from 'emailjs-com'
+
 const useStyles = makeStyles(theme => {
   return {
     container: {
@@ -26,39 +28,48 @@ const useStyles = makeStyles(theme => {
     buttonText: {
       fontSize: "11.2px",
     },
+    alert: {
+      margin: '20px 0px',
+      backgroundColor: 'rgb(232, 240, 254)',
+      textAlign: 'center',
+    },
   }
 })
 const News = () => {
   const classes = useStyles()
-  const [datos, setDatos] = useState({})
-  const handleSubmit = e => {
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encodeURI({ ...datos, "form-name": "newsletter" })
-    }).then(() => alert("Success!"))
-      .catch(error => alert(error));
-    e.preventDefault();
-  };
-
+  const [success, setSuccess] = useState(false)
+  const [error, setError] = useState(false)
+  const onSubmit = (e) => {
+    e.preventDefault()
+    emailjs.sendForm('service_m2xhfj5', 'template_enndpah', e.target,'user_FSensVSZLEhow6fx4g104')
+    .then(() => {
+      setError(false)
+      setSuccess(true)
+    }, (err) => {
+      setSuccess(false)
+      setError(true)
+    })	 
+  }
   return (
     <Grid item xs={12} sm={6} className={classes.container}>
-      <form name="newsletter" netlify netlify-honeypot="bot-field" hidden>
-        <input type="email" name="email" />
-      </form>
       <Typography variant="h1">
         <b>NewsLetter</b>
       </Typography>
       <Typography className={classes.text} variant="h6">
         Déjanos tu email para enviarte las mejores noticias sobre las TIC, que seguramente te interesaran para que tu área de TI este siempre al día
       </Typography>
-      <form style={{ display: "flex" }} name="newsletter" method="POST" data-netlify="true" enctype="application/x-www-form-urlencoded" >
+      <form onSubmit={onSubmit} style={{ display: "flex" }} name="newsletter" method="POST" data-netlify="true" enctype="application/x-www-form-urlencoded" >
         <input type="hidden" name="form-name" value="newsletter" />
         <Input className={classes.input} type="email" name="email" />
         <Button variant="contained" color="secondary" type='submit'>
           <Typography className={classes.buttonText}>Suscribirme</Typography>
         </Button>
       </form>
+      {
+        success ? 
+        <Typography variant="h6" className={classes.alert}>¡Enviado con Exito!</Typography> : 
+        error ? <Typography variant="h6" className={classes.alert}>¡Error al enviar!</Typography> : null
+      }
     </Grid>
   )
 }

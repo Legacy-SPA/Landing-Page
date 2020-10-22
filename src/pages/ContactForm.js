@@ -1,6 +1,7 @@
-import React, { createRef, useState } from "react"
+import React, { createRef, useState} from "react"
 import { makeStyles } from "@material-ui/core/styles"
 import { Typography, Input, Grid, Button } from "@material-ui/core"
+import emailjs from 'emailjs-com'
 
 const useStyles = makeStyles(theme => {
   return {
@@ -42,81 +43,69 @@ const useStyles = makeStyles(theme => {
     buttonText: {
       fontSize: "11.2px",
     },
+    alert: {
+      margin: '20px 0px',
+      backgroundColor: 'rgb(232, 240, 254)',
+      textAlign: 'center',
+    },
   }
 })
+
+
 const ContactForm = (props) => {
   const classes = useStyles()
-  const [datos, setDatos] = useState({})
   const [success, setSuccess] = useState(false)
-  const handleSubmit = e => {
-    e.preventDefault();
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encodeURI(JSON.stringify({ ...datos, "form-name": "contact" }))
-    }).then(() => {
-      alert("Success!")
-      setSuccess(true)
-    })
-      .catch(error => {
-        alert(error)
-        setSuccess(false)
-      });
-  };
+  const [error, setError] = useState(false)
 
+  const onSubmit = (e) => {
+    e.preventDefault()
+    emailjs.sendForm('service_m2xhfj5', 'template_enndpah', e.target, 'user_FSensVSZLEhow6fx4g104')
+    .then(() => {
+      setError(false)
+      setSuccess(true)
+    }, (err) => {
+      setSuccess(false)
+      setError(true)
+    })	 
+  }
+  
   return (
     <Grid className={classes.container} item xs={12} sm={6}>
-      <form name="contact" netlify netlify-honeypot="bot-field" hidden>
-        <input type="email" name="email" />
-        <input type="text" name="nombre" />
-        <input type="text" name="empresa" />
-        <textarea name="proyecto"/>
-      </form>
       <Typography className={classes.text} variant="h1">
         <b>Cuentanos tu idea o problema</b>
       </Typography>
-      <form name="contact" method="POST" data-netlify="true" enctype="application/x-www-form-urlencoded">
+      <form onSubmit={onSubmit} name="contact" method="POST" data-netlify="true" enctype="application/x-www-form-urlencoded">
         <input type="hidden" name="form-name" value="contact" />
         <div className={classes.labelContent}>
-        <label className={classes.labelInput} htmlFor={'email'}>
-          <Typography className={classes.label} variant="h6">
-            Email
-          </Typography>
-        </label>
-        <Input className={classes.Input} placeholder={"info@example.com"} id={'mailText'} type="email" name="email"
-          onChange={(e) => {
-            setDatos({... datos, email: e.target.value})
-          }}/>
-        <label className={classes.labelInput} htmlFor={'nombre'}>
-          <Typography className={classes.label} variant="h6" style={{marginTop: 10}}>
-            Nombre
-          </Typography>
-        </label>
-        <Input className={classes.Input} placeholder={"Tu nombre"} id={'nameText'} type="text" name="nombre"
-          onChange={(e) => {
-            setDatos({... datos, nombre: e.target.value})
-          }}/>
-        <label className={classes.labelInput} htmlFor={'empresa'}>
-          <Typography className={classes.label} variant="h6" style={{marginTop: 10}}>
-            Empresa
-          </Typography>
-        </label>
-        <Input className={classes.Input} type="text" name="empresa"
-          onChange={(e) => {
-            setDatos({... datos, empresa: e.target.value})
-          }}/>
+          <label className={classes.labelInput} htmlFor={'reply_to'}>
+            <Typography className={classes.label} variant="h6">
+              Email
+            </Typography>
+          </label>
+          <Input required className={classes.Input} placeholder={"info@example.com"} id={'mailText'} type="email" name="reply_to"/>
+          <label className={classes.labelInput} htmlFor={'nombre'}>
+            <Typography className={classes.label} variant="h6" style={{marginTop: 10}}>
+              Nombre
+            </Typography>
+          </label>
+          <Input required className={classes.Input} placeholder={"Tu nombre"} id={'nameText'} type="text" name="nombre"/>
+          <label className={classes.labelInput} htmlFor={'empresa'}>
+            <Typography className={classes.label} variant="h6" style={{marginTop: 10}}>
+              Empresa
+            </Typography>
+          </label>
+          <Input required className={classes.Input} type="text" name="empresa"/>
           <label className={classes.labelInput} htmlFor={'proyecto'}>
-          <Typography className={classes.label} variant="h6" style={{marginTop: 10}}>
-            Proyecto
-          </Typography>
-        </label>
-        <textarea className={classes.Input} form="contact" name="proyecto"
-          onChange={(e) => {
-            setDatos({... datos, empresa: e.target.value})
-          }}></textarea>
+            <Typography className={classes.label} variant="h6" style={{marginTop: 10}}>
+              Proyecto
+            </Typography>
+          </label>
+          <Input required className={classes.Input} type="text" name="proyecto"/>
         </div>
         {
-          success ? <div>Enviado con Exito!</div> : null
+          success ? 
+          <Typography variant="h6" className={classes.alert}>¡Enviado con Exito!</Typography> : 
+          error ? <Typography variant="h6" className={classes.alert}>¡Error al enviar!</Typography> : null
         }
         <Button className={classes.button} variant="contained" color="secondary" type="submit">
           <Typography className={classes.buttonText}>Enviar</Typography>

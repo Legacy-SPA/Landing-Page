@@ -10,6 +10,8 @@
     "axios": "^0.20.0",
     "babel-plugin-styled-components": "^1.10.7",
     "beautiful-react-hooks": "^0.25.5",
+    "emailjs": "^3.3.0",
+    "emailjs-com": "^2.6.3",
     "gatsby": "^2.24.24",
     "gatsby-image": "^2.4.5",
     "gatsby-plugin-manifest": "^2.4.9",
