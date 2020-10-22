@@ -67,13 +67,18 @@ const useStyles = makeStyles(theme => {
       margin: '10px 0px'
     },
     form: {
-      marginTop: '10px',
-      width: '50%', 
+      marginTop: '10px', 
       alignSelf: 'center',
       textAlign: 'center',
       backgroundColor: 'rgb(30, 34, 72)',
       padding: '10px 0px',
       borderRadius: '10px',
+      [theme.breakpoints.up("sm")]: {
+        width: '50%',
+      },
+      [theme.breakpoints.down("sm")]: {
+        width: '100%',
+      },
     },
   }
 })

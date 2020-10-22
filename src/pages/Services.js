@@ -100,6 +100,7 @@ const Services = (props) => {
             <b>Servicio de Equipo de Desarrollo Dedicado.</b>
           </Typography>
           <Typography className={`${classes.serviceDesc} ${classes.lineHigh} ${classes.paragraph}`} variant="h6">
+            No necesitas tener un equipo TI interno de desarrollo de software. Nosotros te asignamos una célula ágil de desarrollo y dedicada exclusivamente a desarrollar soluciones tecnológicas para tu empresa.
           </Typography>
         </Grid>
         <Grid xs={12} sm={6} lg={4} className={classes.itemService}>
@@ -108,7 +109,7 @@ const Services = (props) => {
             <b>Automatizacion robotica de procesos (RPA)</b>
           </Typography>
           <Typography className={`${classes.serviceDesc} ${classes.lineHigh} ${classes.paragraph}`} variant="h6">
-            Automatización de procesos mediante el uso de robots.
+            Eliminamos los trabajos operacionales manuales repetitivos y tediosos, a través de automatización de procesos con robots tecnológicos (RPA) que simulan el comportamiento humano.
           </Typography>
         </Grid>
         <Grid xs={12} sm={6} lg={4} className={classes.itemService}>
@@ -126,7 +127,6 @@ const Services = (props) => {
             <b>Blockchain</b>
           </Typography>
           <Typography className={`${classes.serviceDesc} ${classes.lineHigh} ${classes.paragraph}`} variant="h6">
-          Quieres migrar la arquitectura de tus aplicaciones a una arquitectura robusta, escalable y mas económica, tenemos la solución para ti, con nuestra experiencia tendrás en tus aplicaciones el mejor rendimiento al menor costo.
           </Typography>
         </Grid>
         <Grid xs={12} sm={6} lg={4} className={classes.itemService}>
@@ -135,7 +135,7 @@ const Services = (props) => {
             <b>Inteligencia Artificial</b>
           </Typography>
           <Typography className={`${classes.serviceDesc} ${classes.lineHigh} ${classes.paragraph}`} variant="h6">
-          Quieres migrar la arquitectura de tus aplicaciones a una arquitectura robusta, escalable y mas económica, tenemos la solución para ti, con nuestra experiencia tendrás en tus aplicaciones el mejor rendimiento al menor costo.
+            Sistemas que identifican patrones complejos a partir de grandes volúmenes de datos (big data), siendo capaces de generar sistemas predictivos de forma fiable.
           </Typography>
         </Grid>
       </Grid>
