@@ -11,8 +11,12 @@ const useStyles = makeStyles(theme => {
         padding: "5px 30px",
         textAlign: "center",
       },
-      [theme.breakpoints.up("sm")]: {
+      [theme.breakpoints.up("md")]: {
         padding: "5px 128px",
+        textAlign: "left",
+      },
+      [theme.breakpoints.up("lg")]: {
+        padding: "5px 90px",
         textAlign: "left",
       },
     },

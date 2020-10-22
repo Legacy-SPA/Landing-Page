@@ -10,7 +10,7 @@ const useStyles = makeStyles(theme => {
       [theme.breakpoints.up("xs")]: {
         padding: "5px 30px",
       },
-      [theme.breakpoints.up("sm")]: {
+      [theme.breakpoints.up("md")]: {
         padding: "5px 128px",
       },
     },

@@ -64,7 +64,9 @@ const useStyles = makeStyles(theme => {
     }, 
     input: {
       backgroundColor: "white",
-      margin: '10px 0px'
+      margin: '10px 0px',
+      width: '80%',
+      alignSelf: 'center'
     },
     form: {
       marginTop: '10px', 
@@ -75,16 +77,16 @@ const useStyles = makeStyles(theme => {
       display: 'flex',
       flexDirection: 'column',
       width: '40%',
-      [theme.breakpoints.up("xl")]: {
+      [theme.breakpoints.up("lg")]: {
         width: '15%',
         padding: '10px 20px',
       },
-      [theme.breakpoints.down("md")]: {
-        width: '30%',
-        padding: '10px 20px',
+      [theme.breakpoints.down("lg")]: {
+        width: '40%',
+        padding: '10px 35px',
       },
       [theme.breakpoints.down("sm")]: {
-        width: '40%',
+        width: '30%',
         padding: '10px 50px',
       },
       [theme.breakpoints.down("xs")]: {
@@ -92,6 +94,11 @@ const useStyles = makeStyles(theme => {
         padding: '10px 30px',
       },
     },
+    button: {
+      marginTop: '0px',
+      width: '80%',
+      alignSelf: 'center'
+    }
   }
 })
 
@@ -124,7 +131,7 @@ const MainMenu = (props) => {
             <Input className={classes.input} type="email" name="email" id={'mainMailText'} placeholder={'  ¿Cuál es tu email?'} />
             <Input className={classes.input} type="text" name="nombre" id={'mainNameText'} placeholder={'  ¿Cuál es tu nombre?'} />
             <br/>
-            <Button variant="contained" color="secondary" type='submit' style={{marginTop: '10px'}} onClick={setText}>
+            <Button className={classes.button} variant="contained" color="secondary" type='submit' onClick={setText}>
               <Typography className={classes.buttonText}>Enviar</Typography>
             </Button>
         </div>
