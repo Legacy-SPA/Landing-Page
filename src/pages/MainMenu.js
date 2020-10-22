@@ -71,20 +71,25 @@ const useStyles = makeStyles(theme => {
       alignSelf: 'center',
       textAlign: 'center',
       backgroundColor: 'rgb(30, 34, 72)',
-      padding: '10px 0px',
       borderRadius: '10px',
-      width: '50%',
+      display: 'flex',
+      flexDirection: 'column',
+      width: '40%',
       [theme.breakpoints.up("xl")]: {
         width: '15%',
+        padding: '10px 20px',
       },
       [theme.breakpoints.down("md")]: {
         width: '30%',
+        padding: '10px 20px',
       },
       [theme.breakpoints.down("sm")]: {
-        width: '50%',
+        width: '40%',
+        padding: '10px 50px',
       },
       [theme.breakpoints.down("xs")]: {
-        width: '100%',
+        width: '80%',
+        padding: '10px 30px',
       },
     },
   }
