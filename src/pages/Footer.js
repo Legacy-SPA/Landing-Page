@@ -9,7 +9,7 @@ import instagram from "../images/clients/instagram.svg"
 const useStyles = makeStyles(theme => {
   return {
     main: {
-      width: "90%",
+      width: "100%",
       padding: "50px 0px",
       display: "flex",
       backgroundColor: theme.palette.background.paper,
