@@ -73,10 +73,17 @@ const useStyles = makeStyles(theme => {
       backgroundColor: 'rgb(30, 34, 72)',
       padding: '10px 0px',
       borderRadius: '10px',
-      [theme.breakpoints.up("sm")]: {
-        width: '50%',
+      width: '50%',
+      [theme.breakpoints.up("xl")]: {
+        width: '15%',
+      },
+      [theme.breakpoints.down("md")]: {
+        width: '30%',
       },
       [theme.breakpoints.down("sm")]: {
+        width: '50%',
+      },
+      [theme.breakpoints.down("xs")]: {
         width: '100%',
       },
     },
