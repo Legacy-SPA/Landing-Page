@@ -1,5 +1,5 @@
 import React from "react"
-import { Typography, Input, Button } from "@material-ui/core"
+import { Typography, Button } from "@material-ui/core"
 import { makeStyles } from "@material-ui/core/styles"
 import Main from "../images/Main.svg"
 import Box from "@material-ui/core/Box"
@@ -102,7 +102,6 @@ const useStyles = makeStyles(theme => {
   }
 })
 const scrollToRef = (ref) => window.scrollTo({ behavior: 'smooth', top: ref.current.offsetTop - 88 })
-
 const MainMenu = (props) => {
   const {contactRef} = props
   const setText = () => {

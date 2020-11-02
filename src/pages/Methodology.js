@@ -18,7 +18,7 @@ const useStyles = makeStyles(theme => {
       color: theme.palette.primary.contrastText,
       display: "flex",
       flexDirection: "column",
-      justifyContent: "space-between",
+      justifyContent: "center",
       [theme.breakpoints.down("sm")]: {
         textAlign: 'center'
       }
@@ -36,13 +36,13 @@ const Methodology = (props) => {
   return (
     <div className={classes.main} {...props}>
       <Box className={classes.image} display={{ xs: "none", lg: "block" }}>
-        <img style={{ margin: "-100px 0px" }} alt={"Metodologias"} src={Group} />
+        <img alt={"Metodologias"} src={Group} />
       </Box>
       <Box className={classes.text}>
         <Typography variant="h1">
           <b>Nuestra metodología</b>
         </Typography>
-        <Typography variant="h2" style={{marginTop: 30}}>
+        <Typography variant="h2" style={{marginTop: 50}}>
           <small>
             Es entender tu negocio para proponerte las mejores soluciones que se adapten a los cambios propios de tu modelo, comenzamos con una completa consultoría y asesoría, gestionamos tu proyecto para el cumplimiento de los plazos, organizamos tu infraestructura, orquestamos todos tus procesos y equipos de desarrollo y los que mas nos gusta aseguramos la seguridad y calidad de tus productos, hasta entregarte las llaves de tu auto nuevo.
           </small>
