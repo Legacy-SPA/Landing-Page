@@ -2,13 +2,7 @@ import React from "react"
 import { ThemeProvider, createMuiTheme } from "@material-ui/core/styles"
 
 import "./styles.css"
-/*
-  Theme guide: https://material-ui.com/customization/default-theme/
-*/
-import smoothscroll from 'smoothscroll-polyfill';
 
-// kick off the polyfill!
-smoothscroll.polyfill();
 
 const theme = createMuiTheme({
   palette: {

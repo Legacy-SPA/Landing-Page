@@ -30,8 +30,7 @@ const NavBar = props => {
   const [isOpen, setIsOpen] = useState(false)
   const toggle = () => setIsOpen(prev => !prev)
   const scrollToRef = (ref) => {
-    toggle()
-    ref.current.scrollIntoView({behavior: 'smooth' })
+    window.scrollTo({top: ref.current.offsetTop - 88, behavior: 'smooth'})
   }
   return (
     <AppBar color="primary" position="sticky">
@@ -65,7 +64,10 @@ const NavBar = props => {
             return (
               <Button
                 key={item}
-                onClick={() => scrollToRef(item.ref)}
+                onClick={() => {
+                  toggle()
+                  scrollToRef(item.ref)
+                }}
                 color="inherit"
                 className={classes.navLink}>
                 {item.label}
