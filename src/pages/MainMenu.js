@@ -102,7 +102,6 @@ const useStyles = makeStyles(theme => {
   }
 })
 const scrollToRef = (ref) => window.scrollIntoView({ behavior: 'smooth', top: ref.current.offsetTop - 88 })
-
 const MainMenu = (props) => {
   const {contactRef} = props
   const setText = () => {

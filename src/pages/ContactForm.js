@@ -118,7 +118,7 @@ const ContactForm = (props) => {
               Proyecto
             </Typography>
           </label>
-          <textarea required className={classes.Input} id={'projectText'} name="proyecto" style={{height: '90px'}}></textarea>
+          <textarea required className={classes.Input} id={'projectText'} name="proyecto" style={{height: '80px'}}></textarea>
         </div>
         {
           success ? 
