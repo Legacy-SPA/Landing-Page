@@ -45,7 +45,7 @@ const useStyles = makeStyles(theme => {
       }
     },
     mTop20: {
-      marginTop: 20,      
+      marginTop: 20,
     },
     mTop15: {
       marginTop: 15,
@@ -61,7 +61,7 @@ const useStyles = makeStyles(theme => {
       [theme.breakpoints.down("md")]: {
         paddingTop: 0
       }
-    }, 
+    },
     input: {
       backgroundColor: "#E9F3FE",
       margin: '10px 0px',
@@ -69,7 +69,7 @@ const useStyles = makeStyles(theme => {
       alignSelf: 'center'
     },
     form: {
-      marginTop: '10px', 
+      marginTop: '10px',
       alignSelf: 'center',
       textAlign: 'center',
       backgroundColor: 'rgb(30, 34, 72)',

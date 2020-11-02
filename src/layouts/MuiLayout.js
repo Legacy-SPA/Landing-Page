@@ -31,16 +31,16 @@ const theme = createMuiTheme({
     fontDisplay: "swap",
     h1: {
       fontSize: "32px",
-      fontWeight: 100,
+      fontWeight: 400,
     },
     h2: {
       fontSize: "21px",
-      fontWeight: 100,
+      fontWeight: 400,
       objectFit: "contain",
     },
     h6: {
       fontSize: "0.9375rem",
-      fontWeight: 100,
+      fontWeight: 400,
       lineHeight: 2,
       objectFit: "contain",
     },
@@ -56,7 +56,7 @@ const theme = createMuiTheme({
     },
     body1: {
       fontSize: "14px",
-      fontWeight: 300,
+      fontWeight: 400,
       lineHeight: 2,
     },
     button: {

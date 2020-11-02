@@ -46,8 +46,7 @@ const useStyles = makeStyles(theme => ({
     width: "100%",
   },
   itemService: {
-    marginTop: "15px",
-    marginBottom: "15px",
+    margin: "15px 0",
   },
   paragraph: {
     paddingRight: 20
