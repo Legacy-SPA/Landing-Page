@@ -58,7 +58,7 @@ const useStyles = makeStyles(theme => ({
 const Services = (props) => {
   const theme = useTheme();
   const classes = useStyles()
-  const isSM = useMediaQuery(theme.breakpoints.down('sm'));
+  const isXS = useMediaQuery(theme.breakpoints.down('xs'));
   const isMD = useMediaQuery(theme.breakpoints.down('md'));
   return (
     <Grid container {...props}>
@@ -70,7 +70,7 @@ const Services = (props) => {
           Brindamos servicios informáticos integrales, para suministrar la próxima generación de app en la web, dispositivos móviles y de escritorio:{" "}
         </Typography>
       </Grid>
-      <Grid container xs={12} className={classes.contentServices} spacing={isSM ? 0 : isMD ? 3 : 5}>
+      <Grid container xs={12} className={classes.contentServices} spacing={isXS ? 0 : isMD ? 3 : 5}>
         <Grid item xs={12} sm={6} lg={4} className={classes.itemService}>
           <img src={project} alt={"Proyecto"} />
           <Typography className={classes.serviceDesc} variant="h2">
