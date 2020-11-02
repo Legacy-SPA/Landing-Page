@@ -33,6 +33,7 @@ const useStyles = makeStyles(theme => {
     Input: {
       width: "100%",
       backgroundColor: "#E9F3FE",
+      fontFamily: "'Spartan', sans-serif"
     },
     labelContent: {
       width: "100%",

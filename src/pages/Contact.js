@@ -5,7 +5,6 @@ import ContactForm from "./ContactForm"
 
 const Contact = (props) => (
   <Grid container xs={12} {...props}>
-    <News />
     <ContactForm />
   </Grid>
 )

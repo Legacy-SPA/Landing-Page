@@ -105,11 +105,7 @@ const useStyles = makeStyles(theme => {
 const MainMenu = (props) => {
   const {contactRef} = props
   const setText = () => {
-    document.getElementById("mailText").value = document.getElementById("mainMailText").value
-    document.getElementById("nameText").value = document.getElementById("mainNameText").value
     window.scrollTo(0, contactRef.current.offsetTop - 88)
-    document.getElementById("mainMailText").value = null
-    document.getElementById("mainNameText").value = null
   }
   const classes = useStyles()
   return (
@@ -125,16 +121,8 @@ const MainMenu = (props) => {
           En el camino le agregaremos el máximo valor a tu idea basados en nuestra experiencia, te facilitaremos múltiples soluciones y un plan para llevarlas a buen puerto.
         </Typography>
         <div className={classes.form}>
-            <label className={classes.labelInput}>
-              <Typography className={classes.label} variant="h6">
-                Cotiza tu proyecto
-              </Typography>
-            </label>
-            <Input className={classes.input} type="email" name="email" id={'mainMailText'} placeholder={'  ¿Cuál es tu email?'} />
-            <Input className={classes.input} type="text" name="nombre" id={'mainNameText'} placeholder={'  ¿Cuál es tu nombre?'} />
-            <br/>
             <Button className={classes.button} variant="contained" color="secondary" type='submit' onClick={setText}>
-              <Typography className={classes.buttonText}>Enviar</Typography>
+              <Typography className={classes.buttonText}>Cuentanos tu idea</Typography>
             </Button>
         </div>
       </Box>
