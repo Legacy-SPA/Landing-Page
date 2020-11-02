@@ -10,10 +10,10 @@ import Contact from "./Contact"
 
 const Landing = () => {
   const items = [
-    { label: "Servicios", ref: useRef(null), Component: Services},
-    { label: "Clientes", ref: useRef(null), Component: Client},
-    { label: "Metodología", ref: useRef(null), Component: Methodology},
-    { label: "Contacto", ref: useRef(null), Component: Contact},
+    { label: "Servicios", ref: useRef('services'), Component: Services},
+    { label: "Clientes", ref: useRef('client'), Component: Client},
+    { label: "Metodología", ref: useRef('methodology'), Component: Methodology},
+    { label: "Contacto", ref: useRef('contact'), Component: Contact},
   ]
   return (
     <div>
