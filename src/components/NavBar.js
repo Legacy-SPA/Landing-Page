@@ -22,13 +22,17 @@ const useStyles = makeStyles(theme => ({
   },
 }))
 
-const scrollToRef = (ref) => window.scrollTo({ behavior: 'smooth', top: ref.current.offsetTop - 88 })
+
 
 const NavBar = props => {
   const { items } = props
   const classes = useStyles()
   const [isOpen, setIsOpen] = useState(false)
   const toggle = () => setIsOpen(prev => !prev)
+  const scrollToRef = (ref) => {
+    toggle()
+    ref.current.scrollIntoView({behavior: 'smooth' })
+  }
   return (
     <AppBar color="primary" position="sticky">
       <Toolbar>
@@ -61,7 +65,7 @@ const NavBar = props => {
             return (
               <Button
                 key={item}
-                onClick={() => window.scrollTo(0, item.ref.current.offsetTop - 88)}
+                onClick={() => scrollToRef(item.ref)}
                 color="inherit"
                 className={classes.navLink}>
                 {item.label}
