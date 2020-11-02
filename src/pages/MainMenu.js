@@ -101,11 +101,13 @@ const useStyles = makeStyles(theme => {
     }
   }
 })
+const scrollToRef = (ref) => window.scrollTo({ behavior: 'smooth', top: ref.current.offsetTop - 88 })
 
 const MainMenu = (props) => {
   const {contactRef} = props
   const setText = () => {
-    window.scrollTo(0, contactRef.current.offsetTop - 88)
+    document.getElementById('mailText').focus()
+    scrollToRef(contactRef)
   }
   const classes = useStyles()
   return (

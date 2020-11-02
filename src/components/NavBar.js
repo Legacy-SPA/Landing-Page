@@ -21,6 +21,9 @@ const useStyles = makeStyles(theme => ({
     flexGrow: 1,
   },
 }))
+
+const scrollToRef = (ref) => window.scrollTo({ behavior: 'smooth', top: ref.current.offsetTop - 88 })
+
 const NavBar = props => {
   const { items } = props
   const classes = useStyles()
@@ -39,7 +42,7 @@ const NavBar = props => {
               <Button
                 key={item}
                 color="inherit"
-                onClick={() => window.scrollTo(0, item.ref.current.offsetTop - 88)}
+                onClick={() => scrollToRef(item.ref)}
                 className={classes.navLink}>
                 {item.label}
               </Button>
