@@ -40,7 +40,7 @@ const MainMenu = () => {
             <b>Dirección</b>
           </Typography>
           <Typography variant="h6" className={classes.textLabel}>
-            <small>Amunategui N°232, Oficina 1904, Santiago</small>
+            <small>Carmencita 25, Oficina 31, Las Condes, Santiago</small>
           </Typography>
         </Grid>
         <Grid xs={12} md={4} className={classes.contentText}>
