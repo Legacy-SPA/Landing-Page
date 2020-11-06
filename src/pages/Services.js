@@ -140,7 +140,7 @@ const Services = (props) => {
             <b>Inteligencia Artificial</b>
           </Typography>
           <Typography className={`${classes.serviceDesc} ${classes.lineHigh} ${classes.paragraph}`} variant="h6">
-            Si posees una gran volumen de datos de tu empresa, pero no sabes como extraer lo mejor de ellos para tu próxima estrategia comercia u operativa, con nuestros algoritmos de IA, te ayudamos a generar indicadores convencionales y no convencionales que te colaboraran en 100% a incrementar tus ventas y operaciones.
+            No posees una gran volumen de datos de tu empresa, pero no sabes como extraer lo mejor de ellos para tu próxima estrategia comercia u operativa, con nuestros algoritmos de IA, te ayudamos a generar indicadores convencionales y no convencionales que te colaboraran en 100% a incrementar tus ventas y operaciones.
           </Typography>
         </Grid>
       </Grid>
