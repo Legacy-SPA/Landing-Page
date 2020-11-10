@@ -113,13 +113,13 @@ const MainMenu = (props) => {
     <Box className={`${classes.main} ${classes.pTop100}`}>
       <Box className={classes.text}>
         <Typography variant="h1" className={classes.title}>
-          <b>Desarrollo de Software a medida</b>
+          <b>Desarrollamos Software Que Empoderan Negocios</b>
         </Typography>
         <Typography variant="h2" className={`${classes.mTop20} ${classes.paragraph}`}>
-          Te llevamos de la mano en el desarrollo de tu idea, desde la conceptualización hasta tu producto final.
+          Ayudamos a nuestros clientes a crear y mantener la Innovación Digital
         </Typography>
         <Typography variant="h2" className={`${classes.mTop20} ${classes.paragraph}`}>
-          En el camino le agregaremos el máximo valor a tu idea basados en nuestra experiencia, te facilitaremos múltiples soluciones y un plan para llevarlas a buen puerto.
+        Nos efocamos en el desarrollo ágil de aplicaciones Mobile, Web y Cloud.
         </Typography>
         <div className={classes.form}>
             <Button className={classes.button} variant="contained" color="secondary" type='submit' onClick={setText}>

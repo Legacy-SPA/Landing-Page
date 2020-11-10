@@ -67,7 +67,7 @@ const Services = (props) => {
           <b>Nuestros Servicios</b>
         </Typography>
         <Typography className={`${classes.text} ${classes.lineHigh}`} variant="h6" style={{marginTop: 20}}>
-          Brindamos servicios informáticos integrales, para suministrar la próxima generación de app en la web, dispositivos móviles y de escritorio:{" "}
+          Brindamos servicios informáticos integrales, dando acceso a la próxima generación de aplicaciones Web, Mobile y Cloud:{" "}
         </Typography>
       </Grid>
       <Grid container xs={12} className={classes.contentServices} spacing={isXS ? 0 : isMD ? 3 : 5}>
@@ -77,25 +77,25 @@ const Services = (props) => {
             <b>Auditoria e Intervencion de Software</b>
           </Typography>
           <Typography className={`${classes.serviceDesc} ${classes.lineHigh} ${classes.paragraph}`} variant="h6">
-            Llevamos tu idea de negocio, o tu negocio al siguiente nivel, para ello te prestamos la asesoría en base a consultorías con un equipo de profesionales como mas de 20 años de experiencia.
+            Analizamos la calidad de tu software y de tu área de desarrollo. Evaluamos procesos y metodologías para asegurar un producto de estándar mundial.
           </Typography>
         </Grid>
         <Grid item xs={12} sm={6} lg={4} className={classes.itemService}>
           <img alt={"Software"} src={cms} />
           <Typography className={classes.serviceDesc} variant="h2">
-            <b>Desarrollo de Software a medida</b>
+            <b>Software a Medida</b>
           </Typography>
           <Typography className={`${classes.serviceDesc} ${classes.lineHigh} ${classes.paragraph}`} variant="h6">
-          Bien sea que quieras modificar tu sistema o quieras hacer uno, te llevamos de la mano, aportando valor a tu negocio y desarrollando el software que se adapte a tus necesidades. Sin perder calidad ni rendimiento.
+          Escuchamos tus ideas y creamos un software a medida diseñado especificamente para tu negocio. También te ayudamos a desarrollar nuevas funcionalidades a tu software ya existente.
           </Typography>
         </Grid>
         <Grid item xs={12} sm={6} lg={4} className={classes.itemService}>
           <img alt={"Apps"} src={appDevelopment} />
           <Typography className={classes.serviceDesc} variant="h2">
-            <b>Desarrollo de aplicaciones móviles</b>
+            <b>Desarrollo de aplicaciones móviles</b> 
           </Typography>
           <Typography className={`${classes.serviceDesc} ${classes.lineHigh} ${classes.paragraph}`} variant="h6">
-          Contamos con el equipo ideal para conceptualizar tu idea o transformar tu negocio en una app móvil que permitan a tus usuario interactuar contigo desde el mundo de los smart phones. Te brindamos soluciones escalables y transformables en el tiempo.
+          Te ayudamos a llevar tu idea o negocio a una aplicación amigable y fácil de usar.
           </Typography>
         </Grid>
         <Grid item xs={12} sm={6} lg={4} className={classes.itemService}>
@@ -104,25 +104,25 @@ const Services = (props) => {
             <b>Servicio de Equipo de Desarrollo Dedicado.</b>
           </Typography>
           <Typography className={`${classes.serviceDesc} ${classes.lineHigh} ${classes.paragraph}`} variant="h6">
-            ¿Quiere desarrollar un nuevo software o mejorar el que tienes?. Ya no tienes porque preocuparte por tener un área TI, Nosotros te asignamos una célula ágil de desarrollo y te ayudamos a que alcances el siguiente nivel desde lo tecnologico.
+            Te apoyamos con una célula ágil de desarrollo que te asegurará calidad y transparencia. También te entregamos la facilidad de acelerar proyectos sin la necesidad de contratar gente, nosotros ya la tenemos seleccionada para ti.
           </Typography>
         </Grid>
         <Grid item xs={12} sm={6} lg={4} className={classes.itemService}>
           <img src={proyecto} alt={"Software"}  style={{width: 52, height: 49}} />
           <Typography className={classes.serviceDesc} variant="h2">
-            <b>Automatizacion robotica de procesos (RPA)</b>
+            <b>Automatizacion Robotica de Procesos (RPA)</b>
           </Typography>
           <Typography className={`${classes.serviceDesc} ${classes.lineHigh} ${classes.paragraph}`} variant="h6">
-            Con los robots tecnológicos (RPA), te potenciamos como empresa al poder automatizar muchísimos procesos, simulando un comportamiento humano.
+            Te ayudamos a automatizar procesos mediante robots tecnológicos (RPA). Disminuye costos y errores humanos. Acelera procesos que hoy son fácilmente automatizable. Potencia tu empresa con RPA.
           </Typography>
         </Grid>
         <Grid item xs={12} sm={6} lg={4} className={classes.itemService}>
           <img src={cloud} alt={"Apps"} style={{width: 52, height: 49}}/>
           <Typography className={classes.serviceDesc} variant="h2">
-            <b>DevOps</b>
+            <b>DevOps Cloud</b>
           </Typography>
           <Typography className={`${classes.serviceDesc} ${classes.lineHigh} ${classes.paragraph}`} variant="h6">
-          Quieres migrar la arquitectura de tus aplicaciones a una arquitectura robusta, escalable y mas económica, tenemos la solución para ti, con nuestra experiencia tendrás en tus aplicaciones el mejor rendimiento al menor costo.
+          Migra la arquitectura de tus aplicaciones a una solución robusta, escalable, económica y más segura.
           </Typography>
         </Grid>
         <Grid item xs={12} sm={6} lg={4} className={classes.itemService}>
@@ -131,7 +131,7 @@ const Services = (props) => {
             <b>Blockchain</b>
           </Typography>
           <Typography className={`${classes.serviceDesc} ${classes.lineHigh} ${classes.paragraph}`} variant="h6">
-          Conectamos tu empresa con el mundo Block Chain, automatizamos tus procesos de compra/venta de criptomonedas, para que ellos trabajen por ti.
+          Somos expertos en desarrollos en blockchain y tokenización de activos. 
           </Typography>
         </Grid>
         <Grid item xs={12} sm={6} lg={4} className={classes.itemService}>
@@ -140,7 +140,7 @@ const Services = (props) => {
             <b>Inteligencia Artificial</b>
           </Typography>
           <Typography className={`${classes.serviceDesc} ${classes.lineHigh} ${classes.paragraph}`} variant="h6">
-            No posees una gran volumen de datos de tu empresa, pero no sabes como extraer lo mejor de ellos para tu próxima estrategia comercia u operativa, con nuestros algoritmos de IA, te ayudamos a generar indicadores convencionales y no convencionales que te colaboraran en 100% a incrementar tus ventas y operaciones.
+            Aprovecha la Inteligencia Artificial para optimizar tus procesos internos y externos. # ponerle un poco más
           </Typography>
         </Grid>
       </Grid>
