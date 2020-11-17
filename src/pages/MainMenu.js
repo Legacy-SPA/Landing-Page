@@ -113,13 +113,13 @@ const MainMenu = (props) => {
     <Box className={`${classes.main} ${classes.pTop100}`}>
       <Box className={classes.text}>
         <Typography variant="h1" className={classes.title}>
-          <b>Desarrollamos Software Que Empoderan Negocios</b>
+          <b>Software Que Empoderan Negocios</b>
         </Typography>
         <Typography variant="h2" className={`${classes.mTop20} ${classes.paragraph}`}>
-          Ayudamos a nuestros clientes a crear y mantener la Innovación Digital
+          Ayudamos a nuestros clientes a crear y mantener la Innovación Digital dentro de sus empresas
         </Typography>
         <Typography variant="h2" className={`${classes.mTop20} ${classes.paragraph}`}>
-        Nos efocamos en el desarrollo ágil de aplicaciones Mobile, Web y Cloud.
+         Nos efocamos en el desarrollo ágil de aplicaciones Mobile, Web y Cloud.
         </Typography>
         <div className={classes.form}>
             <Button className={classes.button} variant="contained" color="secondary" type='submit' onClick={setText}>

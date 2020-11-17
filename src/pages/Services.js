@@ -77,7 +77,7 @@ const Services = (props) => {
             <b>Auditoria e Intervencion de Software</b>
           </Typography>
           <Typography className={`${classes.serviceDesc} ${classes.lineHigh} ${classes.paragraph}`} variant="h6">
-            Analizamos la calidad de tu software y de tu área de desarrollo. Evaluamos procesos y metodologías para asegurar un producto de estándar mundial.
+            Analizamos la calidad de tu software y área de desarrollo. Evaluamos los diseños de procesos, automatizaciones, arquitectura, interfaz y seguridad, incluyendo las metodologías para asegurar un producto de estándar mundial.
           </Typography>
         </Grid>
         <Grid item xs={12} sm={6} lg={4} className={classes.itemService}>
@@ -86,7 +86,7 @@ const Services = (props) => {
             <b>Software a Medida</b>
           </Typography>
           <Typography className={`${classes.serviceDesc} ${classes.lineHigh} ${classes.paragraph}`} variant="h6">
-          Escuchamos tus ideas y creamos un software a medida diseñado especificamente para tu negocio. También te ayudamos a desarrollar nuevas funcionalidades a tu software ya existente.
+          Escuchamos tus ideas y creamos un software a medida diseñado especificamente para tu negocio. Si ya tienes tu software, también te ayudamos a desarrollar nuevas funcionalidades. Con este servicio ayudamos a empresas de todos los tamaños a crecer aumentando sus ingresos y disminuyendo sus costos, transformando sus negocios y su manera de captar y mantener clientes.
           </Typography>
         </Grid>
         <Grid item xs={12} sm={6} lg={4} className={classes.itemService}>
@@ -95,13 +95,13 @@ const Services = (props) => {
             <b>Desarrollo de aplicaciones móviles</b> 
           </Typography>
           <Typography className={`${classes.serviceDesc} ${classes.lineHigh} ${classes.paragraph}`} variant="h6">
-          Te ayudamos a llevar tu idea o negocio a una aplicación amigable y fácil de usar.
+          Con nuestra experiencia te ayudamos a llevar tu idea o negocio a una aplicación amigable y fácil de usar, empaquetando funcionalidades increibles para tus clientes accesibles desde la palma de la mano.
           </Typography>
         </Grid>
         <Grid item xs={12} sm={6} lg={4} className={classes.itemService}>
           <img alt={"Integración"} src={layers} />
           <Typography className={classes.serviceDesc} variant="h2">
-            <b>Servicio de Equipo de Desarrollo Dedicado.</b>
+            <b>Equipo de Desarrollo Dedicado <i> On Demand </i> .</b>
           </Typography>
           <Typography className={`${classes.serviceDesc} ${classes.lineHigh} ${classes.paragraph}`} variant="h6">
             Te apoyamos con una célula ágil de desarrollo que te asegurará calidad y transparencia. También te entregamos la facilidad de acelerar proyectos sin la necesidad de contratar gente, nosotros ya la tenemos seleccionada para ti.
@@ -113,7 +113,7 @@ const Services = (props) => {
             <b>Automatizacion Robotica de Procesos (RPA)</b>
           </Typography>
           <Typography className={`${classes.serviceDesc} ${classes.lineHigh} ${classes.paragraph}`} variant="h6">
-            Te ayudamos a automatizar procesos mediante robots tecnológicos (RPA). Disminuye costos y errores humanos. Acelera procesos que hoy son fácilmente automatizable. Potencia tu empresa con RPA.
+            Te ayudamos a automatizar procesos manuales mediante robots tecnológicos (RPA). Disminuye costos y errores humanos, haciendo más eficiente tu organización. Acelera procesos que hoy son fácilmente automatizable con RPA.
           </Typography>
         </Grid>
         <Grid item xs={12} sm={6} lg={4} className={classes.itemService}>
@@ -131,7 +131,7 @@ const Services = (props) => {
             <b>Blockchain</b>
           </Typography>
           <Typography className={`${classes.serviceDesc} ${classes.lineHigh} ${classes.paragraph}`} variant="h6">
-          Somos expertos en desarrollos en blockchain y tokenización de activos. 
+          Somos expertos en desarrollos en blockchain y tokenización de activos. Cuentanos tu necesidad y te ayudamos a aterrizar tu proyecto con una solución pensada para tí. 
           </Typography>
         </Grid>
         <Grid item xs={12} sm={6} lg={4} className={classes.itemService}>
@@ -140,7 +140,7 @@ const Services = (props) => {
             <b>Inteligencia Artificial</b>
           </Typography>
           <Typography className={`${classes.serviceDesc} ${classes.lineHigh} ${classes.paragraph}`} variant="h6">
-            Aprovecha la Inteligencia Artificial para optimizar tus procesos internos y externos. # ponerle un poco más
+            Aprovecha la Inteligencia Artificial para optimizar tus procesos internos y externos. Contamos con gran expertiz que te permitirá diferenciarte de la competencia. Procesamiento de videos e imagenes, atención al cliente, armado de data lakes, entre mucho otros. 
           </Typography>
         </Grid>
       </Grid>

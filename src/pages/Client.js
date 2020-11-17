@@ -63,7 +63,7 @@ const Client = (props) => {
         </Typography>
         <Typography variant="h2" style={{marginTop: 20}} className={classes.title}>
           <small>
-            El éxito de nuestro clientes, es sin duda nuestro éxito, por eso en retribución de su confianza en nosotros a parte de brindarles lo mejor de nosotros, le brindamos una relación de confianza y trabajo a lo largo del tiempo, con los mejores planes de desarrollo y seguimiento, para crecer junto a ellos:
+            El éxito de nuestro clientes, es nuestro mayor objetivo. Para lograr esto trabajamos de manera ágil con la metodología scrum, entregando transparencia y confianza en todo el proceso. Esto nos ha permitido mantener relaciones de largo plazo, ofreciendo los mejores planes de desarrollo y seguimiento, para crecer en conjunto:
           </small>
         </Typography>
       </Grid>
